@@ -12,6 +12,13 @@ This session introduces attendees to...
 
 The requirements to follow the exercises in this repository are...
 
+ * Trial-Account
+ * GH user
+
+We bring:
+* sample-app (fiori, target runtime CF, launchpad) by Harald
+* https://github.com/harry22ndstreet/TechEd2021/tree/TechEdDemo (needs renaming and maybe a better org -- idea: put it into our session repo (license), see mayur's session)
+
 ## Exercises
 
 Provide the exercise content here directly in README.md using [markdown](https://guides.github.com/features/mastering-markdown/) and linking to the specific exercise pages, below is an example.
@@ -23,6 +30,14 @@ Provide the exercise content here directly in README.md using [markdown](https:/
 - [Exercise 2 - Second Exercise Description](exercises/ex2/)
     - [Exercise 2.1 - Exercise 2 Sub Exercise 1 Description](exercises/ex2#exercise-21-sub-exercise-1-description)
     - [Exercise 2.2 - Exercise 2 Sub Exercise 2 Description](exercises/ex2#exercise-22-sub-exercise-2-description)
+
+- Exercise n - Setup CICD service
+    -
+    -
+- Exercise n+1 Setup CI/CD Pipeline
+  - build
+  - add unit tests (if we want to fail during test)
+  - release with TMS
 
   
 **OR** Link to the Tutorial Navigator for example...
