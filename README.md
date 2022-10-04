@@ -33,14 +33,14 @@ Provide the exercise content here directly in README.md using [markdown](https:/
 
 - Getting Started
     - Forking _this_ repository (we'll make https://github.com/harry22ndstreet/TechEd2021/tree/TechEdDemo into this repository - need to talk Harald)
-    - subscribing to CICD service  and assign role collections
+    - [subscribing to CICD service  and assign role collections]()
     - subscribing to CTMS
 
 - Setting Up Cloud Transport
     - create route etc to be used later in cicd setup
 
 - Setup CICD pipeline
-    - Access the service and create a repository
+    - [Access the service and create a repository]()
     - create job with build only (run manually)
     - edit the job with enable "additional unit tests to fail) with tms support (get service key, transport route exists already, see above)
     - create webhook while job is running (manually)
