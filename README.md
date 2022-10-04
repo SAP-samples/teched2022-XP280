@@ -13,7 +13,7 @@ This session introduces attendees to...
 The requirements to follow the exercises in this repository are...
 
  * Trial-Account
- * GH user
+ * GH user + fork of repository
 
 We bring:
 * sample-app (fiori, target runtime CF, launchpad) by Harald
@@ -31,9 +31,21 @@ Provide the exercise content here directly in README.md using [markdown](https:/
     - [Exercise 2.1 - Exercise 2 Sub Exercise 1 Description](exercises/ex2#exercise-21-sub-exercise-1-description)
     - [Exercise 2.2 - Exercise 2 Sub Exercise 2 Description](exercises/ex2#exercise-22-sub-exercise-2-description)
 
-- Exercise n - Setup CICD service
-    -
-    -
+- Getting Started
+    - Forking _this_ repository (we'll make https://github.com/harry22ndstreet/TechEd2021/tree/TechEdDemo into this repository - need to talk Harald)
+    - subscribing to CICD service  and assign role collections
+    - subscribing to CTMS
+
+- Setting Up Cloud Transport
+    - create route etc to be used later in cicd setup
+
+- Setup CICD pipeline
+    - Access the service and create a repository
+    - create job with build only (run manually)
+    - edit the job with enable "additional unit tests to fail) with tms support (get service key, transport route exists already, see above)
+    - create webhook while job is running (manually)
+    - code change fix
+    
 - Exercise n+1 Setup CI/CD Pipeline
   - build
   - add unit tests (if we want to fail during test)
