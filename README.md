@@ -31,6 +31,12 @@ Provide the exercise content here directly in README.md using [markdown](https:/
     - [Exercise 2.1 - Exercise 2 Sub Exercise 1 Description](exercises/ex2#exercise-21-sub-exercise-1-description)
     - [Exercise 2.2 - Exercise 2 Sub Exercise 2 Description](exercises/ex2#exercise-22-sub-exercise-2-description)
 
+- Preparations
+    - [Get a free account on SAP BTP Trial](https://developers.sap.com/tutorials/hcp-create-trial-account.html)
+    - [Set Up SAP Business Application Studio for Development](https://developers.sap.com/tutorials/appstudio-onboarding.html)
+    - [Set Up SAP Launchpad Service Using a Trial Account](https://developers.sap.com/tutorials/cp-portal-cloud-foundry-getting-started.html)
+    - [Create a Dev Space for SAP Fiori Apps](https://developers.sap.com/tutorials/appstudio-devspace-fiori-create.html)
+    
 - Getting Started
     - Forking _this_ repository (we'll make https://github.com/harry22ndstreet/TechEd2021/tree/TechEdDemo into this repository - need to talk Harald)
     - [subscribing to CICD service  and assign role collections]()
