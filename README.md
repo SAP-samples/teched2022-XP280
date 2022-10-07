@@ -33,7 +33,9 @@ Provide the exercise content here directly in README.md using [markdown](https:/
 
 - Preparations
     - [Get a free account on SAP BTP Trial](https://developers.sap.com/tutorials/hcp-create-trial-account.html)
-    - [Set Up SAP Business Application Studio for Development](https://developers.sap.com/tutorials/appstudio-onboarding.html)
+    - Remove: [Set Up SAP Business Application Studio for Development](https://developers.sap.com/tutorials/appstudio-onboarding.html)
+    - Get GitHub user
+    - Fork Example coding
     - [Set Up SAP Launchpad Service Using a Trial Account](https://developers.sap.com/tutorials/cp-portal-cloud-foundry-getting-started.html)
     - [Create a Dev Space for SAP Fiori Apps](https://developers.sap.com/tutorials/appstudio-devspace-fiori-create.html)
     
