@@ -13,7 +13,7 @@ This session introduces attendees to...
 The requirements to follow the exercises in this repository are...
 
  * Trial-Account
- * GH user + fork of repository
+ * GH user + fork of repository (but creating the fork is covered in Exercise 0)
 
 We bring:
 * sample-app (fiori, target runtime CF, launchpad) by Harald
