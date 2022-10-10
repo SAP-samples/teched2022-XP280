@@ -43,6 +43,6 @@ Repeat the above steps for your second addtional subaccount. Call it for example
 39. Make sure that your user gets the roles 'Space Manager' and 'Space Developer' assigned. This is the default.
 40. Click on **Create**.
 
-You now have (at least) three subaccounts inside your Trail blobal account. 
+You now have (at least) three subaccounts inside your Trail global account. 
 
 This concludes this exercise.
