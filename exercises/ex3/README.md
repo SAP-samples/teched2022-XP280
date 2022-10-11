@@ -140,9 +140,68 @@ You should now have a total of three destinations pointing to your three subacco
 
 ## Create transport landscape in cTMS
 
+### Create transport nodes
+
 1. Open the cTMS UI by entering the subaccount in which you have subscribed to cTMS (normally 'trial') and opening the **'Instances and Subscriptions'** view (to be found in the 'Services' area).
 2. In the 'Subscriptions' area click on the link of **'Cloud Transport Management'**.
+3. The cTMS Overview page opens.
+4. In the navigation pane click on **Transport Nodes**.
+5. Click on the '+' icon.
+6. Enter a **Name**, for example 'DEV'.
+7. Optionally enter a **Description**, for example 'Devlopment node'.
+8. **Select** the checkbox 'Allow Upload to Node'.
+9. Leave the **Forward Mode** set to **Auto**.
+10. Do **not** set the checkbox **Controlled By SAP Solution Manager**.
+11. Select **Content Type** **'Multi-Target Application'** from the dropdown.
+12. Set the **Destination** to point to your development subaccount (**'DEV_MTA'** if you followed our naming proposal). 
+13. Leave the **Deployment Strategy** set to **default**.
+14. Click on **OK** .
 
+Repeat these steps for the other two subaccounts (with some slight changes!):
 
+15. Click on the '+' icon.
+6. Enter a **Name**, for example 'TEST'.
+7. Optionally enter a **Description**, for example 'Test node'.
+8. Do **not** set the checkbox 'Allow Upload to Node'.
+9. Leave the **Forward Mode** set to **Auto**.
+10. Do **not** set the checkbox **Controlled By SAP Solution Manager**.
+11. Select **Content Type** **'Multi-Target Application'** from the dropdown.
+12. Set the **Destination** to point to your development subaccount (**'TEST_MTA'** if you followed our naming proposal). 
+13. Leave the **Deployment Strategy** set to **default**.
+14. Click on **OK** .
+25. Click on the '+' icon.
+6. Enter a **Name**, for example 'PROD'.
+7. Optionally enter a **Description**, for example 'Production node'.
+8. Do **not** set the checkbox 'Allow Upload to Node'.
+9. Leave the **Forward Mode** set to **Auto**.
+10. Do **not** set the checkbox **Controlled By SAP Solution Manager**.
+11. Select **Content Type** **'Multi-Target Application'** from the dropdown.
+12. Set the **Destination** to point to your development subaccount (**'PROD_MTA'** if you followed our naming proposal). 
+13. Leave the **Deployment Strategy** set to **default**.
+14. Click on **OK** .
 
+You should now have three transport nodes DEV, TEST and PROD.
+
+### Create transport routes
+
+1. Click on **Transport Routes** in the navigation pane.
+2. Click on the '+' icon.
+3. Enter a **Name**, for example 'DEV_to_TEST'.
+4. Optionally enter a **Description**.
+5. **Choose a source node** for the route, in our naming convention 'DEV'.
+6. **Choose a target node**, in our naming convention 'TEST'.
+7. Click on **OK**.
+8. Click on the '+' icon again.
+9. Enter a **Name**, for example 'TEST_to_PROD'.
+4. Optionally enter a **Description**.
+5. **Choose a source node** for the route, in our naming convention 'TEST'.
+6. **Choose a target node**, in our naming convention 'PROD'.
+7. Click on **OK**.
+
+You should now see two tranport routes 'DEV_to_TEST' and 'TEST_to_PROD'.
+
+### Check visual representation of transport landscape
+
+1. Click on **Landscape Visualization** in the navigation pane.
+2. You should see a linear three node landscape.
 
