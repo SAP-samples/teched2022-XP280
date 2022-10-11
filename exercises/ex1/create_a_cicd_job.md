@@ -2,12 +2,12 @@
 
 In this exercise, we will create a cicd job.
 To configure a job via CI/CD service, please log in to SAP Continuous Delivery and Services.
-To login to it, go to the subaccount in the SAP BTP cockpit wherein you have subscribed to this instance.Then, click on **Instances and Subscriptions** button from left side menu as shown in the following image. Then, click on **Continuous Integration and Delivery**. After clicking on it, you will be navigated to the login page of the service. Please enter the username and password.
+To login to it, go to the subaccount in the SAP BTP cockpit wherein you have subscribed to this instance.Then, click on **Services** dropdown list from left side panel and select **Instances and Subscriptions** from left side menu as shown in the following image. Then, click on **Continuous Integration and Delivery**. After clicking on it, you will be navigated to the UI of the CICD service.
 
 <br>![](images/login_to_cicd.png)
 
-!!! note "Authorization Error"
-If you get an authorization error when you try in a later exercise to access the service, please log out of the SAP Business Technology Platform and log back in again. After that you shouldn't have any problems with accessing the service.
+__Note:__ "Authorization Error"
+If you get an authorization error when you try in a later exercise to access the service, please log out of the SAP Business Technology Platform and log back in again.
 
 After a successful login into CI/CD service,please follow below steps to configure a job.
 
@@ -19,7 +19,7 @@ In the CI/CD UI, create a repository by clicking on **Repositories** list as sho
 
 <br>![](images/add_repo.png)
 
-Then, configure the repository by entering the necessary fields.
+Then, configure the repository by entering the necessary fields. In the **clone URL** field, enter the url of your forked github repository as shown in the below image.
  
 <br>![](images/configure_repo.png)
 
@@ -50,24 +50,26 @@ After successfully creating a repository and webhook, we are now ready to create
 Click on **Jobs** list and then click on **+** button to create a job.
 
 <br>![](images/add_a_job.png)
+
  Please enter the mandatory fields as shown in the following image. 
  - Choose the repository that you have just created from the drop down list. 
  - Select the **Branch** as "main". Select **Pipeline** "SAP Fiori in the Cloud Foundry environment". 
  - From the **Stages** section, select **Configuration mode** as "Job Editor".
- - From the **Build** section, choose **Build Tool Version** "Java 8 Node 14" 
+ - From the **Build** section, choose **Build Tool Version** as "Java 8 Node 14" 
 
 <br>![](images/configure_a_job.png)
 
-Finally, click on the **Create** button.
+Finally, click on the **Create** button. You've now created a first job in CICD service with **Build** stage enabled.
 
-You've now created a first job in CICD service with build stage enabled. By default, build stage is always on.
-Now, you can run the first build by clicking on the **Run** button as shown in the image.
+## Exercise 1.4 Trigger the Build
+
+To trigger the build, click on **Run** button as shown in the image.
 
 <br>![](images/trigger_build.png)
 
 ## Summary
 
-Cheers!You've now created a first job via CICD pipeline and triggered the first build.
+Cheers! you've now created a first job via CICD pipeline and triggered the first build.
 
 Continue to - [Exercise 2 - Exercise 2 Description](../ex2/README.md)
 
