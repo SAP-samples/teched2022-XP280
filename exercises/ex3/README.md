@@ -1,4 +1,4 @@
-# Create target subaccounts for transport
+# Part 1: Create target subaccounts for transport
 
 1. Go to the BTP Cockpit of your SAP BTP Trial global account to the tab 'Account Explorer'.
 2. You should see (at least) one subaccount called 'trial', which was created when your Trial global account was set up.
@@ -45,7 +45,8 @@ Repeat the above steps for your second addtional subaccount. Call it for example
 
 You now have (at least) three subaccounts inside your Trail global account. 
 
-# Enable SAP Cloud Transport Management for use
+
+# Part 2: Enable SAP Cloud Transport Management for use
 ## Subscribe to SAP Cloud Transport Management
 The subaccount which has been created automatically when creating the BTP Trial global account (called 'trial' by default) has all the needed entitlements for enabling SAP Cloud Transport Management. We will use this subaccount for the exercise. 
 
@@ -109,7 +110,8 @@ For more details see [the documentation](https://help.sap.com/docs/TRANSPORT_MAN
 
 The service key now created will be used to enable the CI&D service to upload content to cTMS and create a transport request.
 
-# Set up transport landscape
+
+# Part 3: Set up transport landscape
 
 ## Create destinations
 
@@ -132,5 +134,15 @@ You will now create destinations to deploy the content built by the CI&D service
 12. Enter your **Password**.
 13. Click **Save**.
 14. Click **Check Connection**. The return code should be '200: OK'. Otherwise re-check your entries.
-15. Now repeat these steps for the other two subaccounts you have created previously.
-16. 
+
+Now repeat these steps for the other two subaccounts you have created previously and name them for example 'TEST_MTA' and 'PROD_MTA'.
+You should now have a total of three destinations pointing to your three subaccounts.
+
+## Create transport landscape in cTMS
+
+1. Open the cTMS UI by entering the subaccount in which you have subscribed to cTMS (normally 'trial') and opening the **'Instances and Subscriptions'** view (to be found in the 'Services' area).
+2. In the 'Subscriptions' area click on the link of **'Cloud Transport Management'**.
+
+
+
+
