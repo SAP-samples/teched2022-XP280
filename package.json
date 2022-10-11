@@ -27,7 +27,8 @@
   },
   "ui5": {
     "dependencies": [
-      "@sap/ux-ui5-tooling"
+      "@sap/ux-ui5-tooling",
+      "fiori-tools"
     ]
   },
   "sapuxLayer": "CUSTOMER_BASE"
