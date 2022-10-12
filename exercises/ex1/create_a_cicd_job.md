@@ -1,15 +1,82 @@
 # Exercise 1 - Create a CICD Job
 
-In this exercise, we will create a cicd job.
-To configure a job via CI/CD service, please log in to SAP Continuous Delivery and Services.
-To login to it, go to the subaccount in the SAP BTP cockpit wherein you have subscribed to this instance.Then, click on **Services** dropdown list from left side panel and select **Instances and Subscriptions** from left side menu as shown in the following image. Then, click on **Continuous Integration and Delivery**. After clicking on it, you will be navigated to the UI of the CICD service.
+In this exercise, we will set up access to the Continuous Integration and Delivery service and create a job there.
+
+## Exercise 1.0 - Set up SAP Continuous Integration and Delivery Service
+
+### Subscribe to the SAP Continuous Integration and Delivery Service
+
+1. Go to the Service Marketplace menu, seen on the left. Search for "continuous" and then click on
+   the 3 dots above the SAP Continuous Integration and Delivery service. Click "Create".
+
+   <br>![](/exercises/ex1/images/create_subscription.png)
+
+   > If you don't see the SAP Continuous Integration and Delivery service when you search for it, please add the correct entitlements by skipping to the next section and then coming back.
+
+1. Leave the default settings and click "Create".
+
+<br>![](/exercises/ex1/images/subscribe_to_service.png)
+
+### (Optional) Add Correct Entitlements
+
+If you didn't see the SAP Continuous Integration and Delivery Service in the Service Marketplace,
+follow these steps to make it available there.
+
+1. Open the Entitlements menu, seen on the left. Click on the blue "Configure Entitlements"
+   button.
+
+   <br>![](/exercises/ex1/images/configure_entitlements.png)
+
+1. That button should now say "Add Service Plans". Click that button.
+
+1. Search for "continuous" and then click on the SAP Continuous Integration and Delivery service.
+   Check the box next to "trial (Application)" and click "Add 1 Service Plan".
+
+   <br>![](/exercises/ex1/images/add_service_plan.png)
+
+1. Back in the Entitlements menu, click "Save".
+
+   <br>![](/exercises/ex1/images/save_entitlements.png)
+
+You can now go back to the previous section to subscribe to the SAP Continuous Integration and
+Delivery service.
+
+### Add Required Permissions
+
+1. If you see a window pop up that says "Creation in Progress", you can close it.
+
+1. Click on Users, which is under the Security section on the left side menu. Then click on the
+   arrow on the far right side of your user entry.
+
+   <br>![](/exercises/ex1/images/click_on_user.png)
+
+1. After scrolling to the bottom of the new menu that opened, click on the 3 dots, and then click
+   on "Assign Role Collection".
+
+   <br>![](/exercises/ex1/images/assign_role.png)
+
+1. Check the boxes for "CICD Service Administrator" and "CICD Service Developer". Click "Assign Role
+   Collection".
+
+   <br>![](/exercises/ex1/images/assign_cicd_roles.png)
+
+### Open the service
+
+You should now be able to access the SAP Continuous Integration and Delivery service.
+
+You can do so by going back to the Instances and Subscriptions section, seen in the left menu bar.
 
 <br>![](images/login_to_cicd.png)
 
-__Note:__ "Authorization Error"
-If you get an authorization error when you try in a later exercise to access the service, please log out of the SAP Business Technology Platform and log back in again.
+Then, click on "Continuous Integration & Delivery". After clicking on it, you will be navigated to
+the User Interface of the SAP Continuous Integration and Delivery service.
 
-After a successful login into CI/CD service,please follow below steps to configure a job.
+<br>![](/exercises/ex1/images/open_service.png)
+
+> If you get an authorization error when you to access the service, please log out of the SAP Business Technology Platform and log back in again.
+
+After successfully opening the SAP Continuous Integration and Delivery service, please follow below
+steps to configure a job.
 
 ## Exercise 1.1 Create a Repository
 
