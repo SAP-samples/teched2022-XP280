@@ -11,7 +11,7 @@ In this exercise, we will set up access to the Continuous Integration and Delive
 
    <br>![](/exercises/ex1/images/create_subscription.png)
 
-   > If you don't see the SAP Continuous Integration and Delivery service when you search for it, please add the correct entitlements by skipping to the next section and then come back.
+ **NOTE**  > If you don't see the SAP Continuous Integration and Delivery service when you search for it, please add the correct entitlements by skipping to the next section and then come back.
 
 1. Leave the default settings and click "Create".
 
