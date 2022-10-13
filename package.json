@@ -15,7 +15,4 @@
       "@sap/ui5-builder-webide-extension"
     ]
   },
-  "scripts": {
-    "wdio": "wdio run wdio.conf.js"
-  }
 }
