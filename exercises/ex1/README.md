@@ -82,7 +82,7 @@ steps to configure a job.
 
 Before configuring a job, it is a prerequisite to create a repository where the source code of your application resides.
 
-In the CI/CD UI, create a repository by clicking on **Repositories** list as shown in the below image.
+In the CI/CD UI, create a repository by clicking on **Repositories** list as shown in the below image and then click on the **+** symbol.
 
 <br>![](images/add_repo.png)
 
@@ -91,7 +91,7 @@ Then, configure the repository by entering the necessary fields. In the **clone 
 <br>![](images/configure_repo.png)
 
 
-## Exercise 1.2 Create a Webhook
+## Exercise 1.2 (Optional) Create a Webhook
 
 It is optional to the users to configure the webhook for their repository. Configuring webhook enables triggering the build automatically when there is a change commit in the source code repository. 
 To configure a webhook, go to the repository you have just created, and click on **Webhook Data** button as shown in the below image.
@@ -119,8 +119,8 @@ Click on **Jobs** list and then click on **+** button to create a job.
 <br>![](images/add_a_job.png)
 
  Please enter the mandatory fields as shown in the following image. 
- - Choose the repository that you have just created from the drop down list. 
- - Select the **Branch** as "main". Select **Pipeline** "SAP Fiori in the Cloud Foundry environment". 
+ - Select the **Repository** that you have just created from the drop down list. 
+ - Set the **Branch** as "main". Select **Pipeline** "SAP Fiori in the Cloud Foundry environment". 
  - From the **Stages** section, select **Configuration mode** as "Job Editor".
  - From the **Build** section, choose **Build Tool Version** as "Java 8 Node 14" 
 
