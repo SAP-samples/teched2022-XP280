@@ -19,7 +19,7 @@ In this exercise, we will set up access to the Continuous Integration and Delive
 
 ### (Optional) Add Correct Entitlements
 
-If you didn't see the SAP Continuous Integration and Delivery Service in the Service Marketplace,
+If you didn't see the SAP Continuous Integration and Delivery Service in the **Service Marketplace**,
 follow these steps to make it available there.
 
 1. Open the Entitlements menu, seen on the left. Click on the blue "Configure Entitlements"
