@@ -6,12 +6,12 @@ In this exercise, we will set up access to the Continuous Integration and Delive
 
 ### Subscribe to the SAP Continuous Integration and Delivery Service
 
-1. Go to the Service Marketplace menu, seen on the left. Search for "continuous" and then click on
+1. Go to the **Service Marketplace** menu, seen on the left. Search for "continuous" and then click on
    the 3 dots above the SAP Continuous Integration and Delivery service. Click "Create".
 
    <br>![](/exercises/ex1/images/create_subscription.png)
 
-   > If you don't see the SAP Continuous Integration and Delivery service when you search for it, please add the correct entitlements by skipping to the next section and then coming back.
+   > If you don't see the SAP Continuous Integration and Delivery service when you search for it, please add the correct entitlements by skipping to the next section and then come back.
 
 1. Leave the default settings and click "Create".
 
@@ -45,7 +45,7 @@ Delivery service.
 
 1. If you see a window pop up that says "Creation in Progress", you can close it.
 
-1. Click on Users, which is under the Security section on the left side menu. Then click on the
+1. Click on "Users", which is under the "Security" section on the left side menu. Then click on the
    arrow on the far right side of your user entry.
 
    <br>![](/exercises/ex1/images/click_on_user.png)
@@ -64,7 +64,7 @@ Delivery service.
 
 You should now be able to access the SAP Continuous Integration and Delivery service.
 
-You can do so by going back to the Instances and Subscriptions section, seen in the left menu bar.
+You can do so by going back to the "Instances and Subscriptions" section, seen in the left menu bar.
 
 <br>![](images/login_to_cicd.png)
 
@@ -73,7 +73,7 @@ the User Interface of the SAP Continuous Integration and Delivery service.
 
 <br>![](/exercises/ex1/images/open_service.png)
 
-> If you get an authorization error when you to access the service, please log out of the SAP Business Technology Platform and log back in again.
+> If you get an authorization error when you try to access the service, please log out of the SAP Business Technology Platform and log back in again.
 
 After successfully opening the SAP Continuous Integration and Delivery service, please follow below
 steps to configure a job.
