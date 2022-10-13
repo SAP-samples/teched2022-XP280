@@ -82,7 +82,7 @@ steps to configure a job.
 
 Before configuring a job, it is a prerequisite to create a repository where the source code of your application resides.
 
-In the CI/CD UI, create a repository by clicking on **Repositories** list as shown the below image.
+In the CI/CD UI, create a repository by clicking on **Repositories** list as shown in the below image.
 
 <br>![](images/add_repo.png)
 
