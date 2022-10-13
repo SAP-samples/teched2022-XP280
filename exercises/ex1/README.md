@@ -43,7 +43,6 @@ Delivery service.
 
 ### Add Required Permissions
 
-1. If you see a window pop up that says "Creation in Progress", you can close it.
 
 1. Click on "Users", which is under the "Security" section on the left side menu. Then click on the
    arrow on the far right side of your user entry.
