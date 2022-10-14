@@ -1,6 +1,6 @@
 # Exercise 1 - Create a CICD Job
 
-In this exercise, we will set up access to the Continuous Integration and Delivery service and create a job there.
+In this exercise, you will set up SAP Continuous Integration and Delivery and, in the service, create a job.
 
 ## Exercise 1.0 - Set up SAP Continuous Integration and Delivery Service
 
