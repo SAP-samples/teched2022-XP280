@@ -6,7 +6,7 @@ In this exercise, you will set up SAP Continuous Integration and Delivery and, i
 
 ### Subscribe to SAP Continuous Integration and Delivery
 
-1. In your subaccount in the SAP BTP cockpit, choose **Services **→ **Service Marketplace**.
+1. In your subaccount in the SAP BTP cockpit, choose **Services** → **Service Marketplace**.
 
 2. In the text box, enter and search for `continuous`.
 
