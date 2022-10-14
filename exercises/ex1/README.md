@@ -2,140 +2,146 @@
 
 In this exercise, you will set up SAP Continuous Integration and Delivery and, in the service, create a job.
 
-## Exercise 1.0 - Set up SAP Continuous Integration and Delivery Service
+## Exercise 1.0 - Set Up SAP Continuous Integration and Delivery
 
-### Subscribe to the SAP Continuous Integration and Delivery Service
+### Subscribe to SAP Continuous Integration and Delivery
 
-1. Go to the **Service Marketplace** menu, seen on the left. Search for "continuous" and then click on
-   the 3 dots above the SAP Continuous Integration and Delivery service. Click "Create".
+1. In your subaccount in the SAP BTP cockpit, choose **Services **→ **Service Marketplace**.
+
+2. In the text box, enter and search for `continuous`.
+
+3. Click on the three dots **...** on the **Continuous Integration & Delivery** tile and choose **Create**.
 
    <br>![](/exercises/ex1/images/create_subscription.png)
 
- **NOTE**  > If you don't see the SAP Continuous Integration and Delivery service when you search for it, please add the correct entitlements by skipping to the next section and then come back.
+ > **Note:** If you don't see the **Continuous Integration & Delivery** tile when you search for it, please skip to the next section for adding the correct entitlements first and then come back.
 
-1. Leave the default settings and click "Create".
+4. In the **New Instance or Subscription** pop-up, leave the default settings and choose **Create**.
 
 <br>![](/exercises/ex1/images/subscribe_to_service.png)
 
-### (Optional) Add Correct Entitlements
+### (Optional) Add the Correct Entitlements
 
-If you didn't see the SAP Continuous Integration and Delivery Service in the **Service Marketplace**,
-follow these steps to make it available there.
+If in the **Service Marketplace** in your subaccount, you didn't see the **Continuous Integration & Delivery** tile,
+execute the following steps.
 
-1. Open the Entitlements menu, seen on the left. Click on the blue "Configure Entitlements"
-   button.
+1. In your subaccount in the SAP BTP cockpit, choose **Entitlements**.
+
+2. In the **Entitlements** overview of your subaccount, choose **Configure Entitlements**.
 
    <br>![](/exercises/ex1/images/configure_entitlements.png)
 
-1. That button should now say "Add Service Plans". Click that button.
+3. Choose **Add Service Plans**.
 
-1. Search for "continuous" and then click on the SAP Continuous Integration and Delivery service.
-   Check the box next to "trial (Application)" and click "Add 1 Service Plan".
+4. In the text box, enter and search for `continuous` and choose **Continuous Integration & Delivery**.
+
+5. In the **Service Details: Continuous Integration & Delivery** pane, check the box next to **trial (Application)** and choose **Add 1 Service Plan**.
 
    <br>![](/exercises/ex1/images/add_service_plan.png)
 
-1. Back in the Entitlements menu, click "Save".
+6. Back in the **Entitlements** overview of your subaccount, choose **Save**.
 
    <br>![](/exercises/ex1/images/save_entitlements.png)
 
-You can now go back to the previous section to subscribe to the SAP Continuous Integration and
-Delivery service.
+You can now go back to the previous section to subscribe to SAP Continuous Integration and
+Delivery.
 
-### Add Required Permissions
+### Add the Required Permissions
 
 
-1. Click on "Users", which is under the "Security" section on the left side menu. Then click on the
-   arrow on the far right side of your user entry.
+1. In your subaccount in the SAP BTP cockpit, choose **Security** → **Users**.
+ 
+2. Choose the arrow **>** next to your user entry.
 
    <br>![](/exercises/ex1/images/click_on_user.png)
 
-1. After scrolling to the bottom of the new menu that opened, click on the 3 dots, and then click
-   on "Assign Role Collection".
+3. In the **Role Collections** overview of your user entry, click on the three dots **...** and choose **Assign Role Collection**.
 
    <br>![](/exercises/ex1/images/assign_role.png)
 
-1. Check the boxes for "CICD Service Administrator" and "CICD Service Developer". Click "Assign Role
-   Collection".
+4. Check the boxes for **CICD Service Administrator** and **CICD Service Developer**, then choose **Assign Role Collection**.
 
    <br>![](/exercises/ex1/images/assign_cicd_roles.png)
 
-### Open the service
+### Open the Continuous Integration and Delivery Service
 
-You should now be able to access the SAP Continuous Integration and Delivery service.
-
-You can do so by going back to the "Instances and Subscriptions" section, seen in the left menu bar.
+1. In your subaccount in the SAP BTP cockpit, choose **Services** → **Instances and Subscriptions**.
 
 <br>![](images/login_to_cicd.png)
 
-Then, click on "Continuous Integration & Delivery". After clicking on it, you will be navigated to
-the User Interface of the SAP Continuous Integration and Delivery service.
+2. In the **Subscriptions** overview, choose **Continuous Integration & Delivery**.
+Now, the user interface of SAP Continuous Integration and Delivery opens.
 
 <br>![](/exercises/ex1/images/open_service.png)
 
-> If you get an authorization error when you try to access the service, please log out of the SAP Business Technology Platform and log back in again.
+> **Note:** If you get an authorization error when trying to access the service, please log out of the SAP Business Technology Platform and log back in again.
 
-After successfully opening the SAP Continuous Integration and Delivery service, please follow below
-steps to configure a job.
 
-## Exercise 1.1 Create a Repository
+## Exercise 1.1 Add Your Repository to SAP Continuous Integration and Delivery
 
-Before configuring a job, it is a prerequisite to create a repository where the source code of your application resides.
+Connect SAP Continuous Integration and Delivery with the repository in which your sources reside.
 
-In the CI/CD UI, create a repository by clicking on **Repositories** list as shown in the below image and then click on the **+** symbol.
+1. In SAP Continuous Integration and Delivery, choose **Repositories** → **+** _(Add)_.
 
 <br>![](images/add_repo.png)
 
-Then, configure the repository by entering the necessary fields. In the **clone URL** field, enter the url of your forked github repository as shown in the below image.
- 
+2. In the **Add Repository** pop-up, add a name for your repository.
+
+3. In GitHub, copy the HTTPS clone URL of your repository and paste it into the **Clone URL** field in the **Add Repository** pop-up in SAP Continuous Integration and Delivery.
 <br>![](images/configure_repo.png)
 
 
 ## Exercise 1.2 (Optional) Create a Webhook
 
-It is optional to the users to configure the webhook for their repository. Configuring webhook enables triggering the build automatically when there is a change commit in the source code repository. 
-To configure a webhook, go to the repository you have just created, and click on **Webhook Data** button as shown in the below image.
+You can configure a webhook for your repository, which automatically triggers a build of your job when there is a change commit in the source code repository. 
+1. In the **Repositories** tab in SAP Continuous Integration and Delivery, choose your newly created repository, then choose **Webhook Data**.
+As a result, the Webhook Data pop-up opens. This pop-up provides the information you need to create a webhook in GitHub.
 
 <br>![](images/webhook_data_button.png)
 
-After that, copy **Payload URL**, **Secret** and click on your repository link as shown in the below image.
+2. Copy both **Payload URL** and **Secret**, then click on the link to your GitHub repository.
 
 <br>![](images/webhook_payload_info.png)
 
-Then, click on **Add Webhook** button on top right side of the page as shown below.
+3. In your project in GitHub, go to the **Settings** tab.
+
+4. From the navigation pane, choose **Webhooks**, then choose **Add webhook**.
  
 <br>![](images/add_webhook_button.png)
 
-In the webhook settings, paste the **payload URL** and the **Secret**, select **Just the push event** radio button and then click on **Add Webhook** button.
-So now, you have configured the webhook for your job.
+5. Enter the **Payload URL**, **Content type**, and **Secret** from the **Webhook Data** pop-up in SAP Continuous Integration and Delivery. For all other settings, leave the default values.
+
+6. Choose **Add webhook**.
 
 <br>![](images/webhook_config.png)
 
-## Exercise 1.3 Create a Job
+## Exercise 1.3 Create and Trigger a Job in SAP Continuous Integration and Delivery
 
-After successfully creating a repository and webhook, we are now ready to create a job in CICD service.
-Click on **Jobs** list and then click on **+** button to create a job.
+1. In SAP Continuous Integration and Delivery, go to the **Jobs** tab and choose **+** _(Create job)_.
 
 <br>![](images/add_a_job.png)
 
- Please enter the mandatory fields as shown in the following image. 
- - Select the **Repository** that you have just created from the drop down list. 
- - Set the **Branch** as "main". Select **Pipeline** "SAP Fiori in the Cloud Foundry environment". 
- - From the **Stages** section, select **Configuration mode** as "Job Editor".
- - From the **Build** section, choose **Build Tool Version** as "Java 8 Node 14" 
+2. In the **General Information** section of the **Create Job** pane, enter the following values:
+- **Job Name**: Freely choose a unique name for your job. We recommend using a name that contains both your GitHub project name and branch.
+- **Repository**: From the drop-down list, choose your repository you have created.
+- **Branch**: Enter `main`.
+- **Pipeline**: From the drop-down list, choose **SAP Fiori in the Cloud Foundry environment**.
+
+3. In the **Stages** section, choose **Job Editor** as **Configuration Mode**.
+
+4. In the **Build** section, choose **Java 8 Node 14** as **Build Tool Version**.
 
 <br>![](images/configure_a_job.png)
 
-Finally, click on the **Create** button. You've now created a first job in CICD service with **Build** stage enabled.
+5. Choose **Create**. You've now created your first CI/CD job, in which the **Build** stage is enabled.
 
-## Exercise 1.4 Trigger the Build
-
-To trigger the build, click on **Run** button as shown in the image.
+6. To trigger a build of your job, choose **Run**.
 
 <br>![](images/trigger_build.png)
 
 ## Summary
 
-Cheers! you've now created a first job via CICD pipeline and triggered the first build.
+Congratulations! You've now set up SAP Continuous Integration and Delivery, added your GitHub repository to the service, and created and triggered your first CI/CD job.
 
 Continue to - [Exercise 2 - Exercise 2 Description](../ex2/README.md)
 
