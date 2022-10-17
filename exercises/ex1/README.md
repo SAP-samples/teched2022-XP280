@@ -18,8 +18,6 @@ In this exercise, you will set up SAP Continuous Integration and Delivery and, i
 
 4. In the **New Instance or Subscription** pop-up, leave the default settings and choose **Create**.
 
-<br>![](/exercises/ex1/images/subscribe_to_service.png)
-
 ### (Optional) Add the Correct Entitlements
 
 If in the **Service Marketplace** in your subaccount, you didn't see the **Continuous Integration & Delivery** tile,
@@ -32,6 +30,8 @@ execute the following steps.
    <br>![](/exercises/ex1/images/configure_entitlements.png)
 
 3. Choose **Add Service Plans**.
+
+   <br>![](/exercises/ex1/images/add_service_plans.png)
 
 4. In the text box, enter and search for `continuous` and choose **Continuous Integration & Delivery**.
 
