@@ -18,8 +18,6 @@ In this exercise, you will set up SAP Continuous Integration and Delivery and, i
 
 4. In the **New Instance or Subscription** pop-up, leave the default settings and choose **Create**.
 
-<br>![](/exercises/ex1/images/subscribe_to_service.png)
-
 ### (Optional) Add the Correct Entitlements
 
 If in the **Service Marketplace** in your subaccount, you didn't see the **Continuous Integration & Delivery** tile,
@@ -32,6 +30,8 @@ execute the following steps.
    <br>![](/exercises/ex1/images/configure_entitlements.png)
 
 3. Choose **Add Service Plans**.
+
+   <br>![](/exercises/ex1/images/add_service_plans.png)
 
 4. In the text box, enter and search for `continuous` and choose **Continuous Integration & Delivery**.
 
@@ -87,9 +87,13 @@ Connect SAP Continuous Integration and Delivery with the repository in which you
 
 2. In the **Add Repository** pop-up, add a name for your repository.
 
-3. In GitHub, copy the HTTPS clone URL of the repository you just created in Exercise 0 without ".git" in the url suffix (for example: https://github.com/srinikitha09/teched2022-XP280) and paste it into the **Clone URL** field in the **Add Repository** pop-up in SAP Continuous Integration and Delivery.
-4. Enter the **Name** for your repository and leave the rest of the fields as it is.
-5  Choose **Add**.
+3. In GitHub, copy the HTTPS clone URL of the repository you just created in Exercise 0.
+
+<br>![](images/clone_url.png)
+
+4. Paste it into the **Clone URL** field in the **Add Repository** pop-up in SAP Continuous Integration and Delivery without ".git" in the url suffix (for example: https://github.com/srinikitha09/teched2022-XP280).
+5. Enter the **Name** for your repository and leave the rest of the fields as it is.
+6. Choose **Add**.
  
 <br>![](images/configure_repo.png)
 
