@@ -23,7 +23,9 @@ To complete the exercises in this repository, please make sure that you meet the
 
 ## Exercises
 
-- [Exercise 0 - Getting Started](exercises/ex0/)
+- [Exercise 0 - Getting Started](exercises/ex0#exercise-0---getting-started)
+    - [Exercise 0.1 - Create a Copy of This Repository](exercises/ex0#create-a-copy-of-this-repository)
+    - [Exercise 0.2 - (Optional) Set Up a Subaccount on Your SAP BTP Trial Account](exercises/ex0#optional-set-up-a-subaccount-on-your-sap-btp-trial-account)
 - [Exercise 1 - First Exercise Description](exercises/ex1/)
     - [Exercise 1.1 - Exercise 1 Sub Exercise 1 Description](exercises/ex1#exercise-11-sub-exercise-1-description)
     - [Exercise 1.2 - Exercise 1 Sub Exercise 2 Description](exercises/ex1#exercise-12-sub-exercise-2-description)
