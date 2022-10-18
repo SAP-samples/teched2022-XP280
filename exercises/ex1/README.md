@@ -146,6 +146,11 @@ As a result, the Webhook Data pop-up opens. This pop-up provides the information
 
 <br>![](images/trigger_build.png)
 
+7. The successful build looks like the following.
+
+<br>![](images/successful_build.png)
+
+
 ## Summary
 
 Congratulations! You've now set up SAP Continuous Integration and Delivery, added your GitHub repository to the service, and created and triggered your first CI/CD job.
