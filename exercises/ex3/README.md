@@ -31,14 +31,14 @@ In this exercise, we will create service key for SAP Cloud Transport Management 
 
 ## Exercise 3.3 Activate the Release Stage of your job
 
-Configure Release Stage via providing corresponding mandorty parameters as described below.
+Configure `Release` Stage via providing corresponding mandorty parameters as described below.
 
 ### Upload to Cloud Transport Management
 
-1. Turn on the TMS upload step via toggle button.
+1. Turn on **Upload to Cloud Transport Management** section under **Release** section via toggle button.
 2. Enter the name of the node for the upload to SAP Cloud Transport Management.
 3. To authenticate your pipeline against SAP Cloud Transport Management, choose the service key you just created from the dropdown list.
-4. Choose Save.
+4. Choose **Save**.
 <br>![](/exercises/ex3/images/03_02_0010.png)
 
 ## Exercise 3.4 - Run the Pipeline manually
