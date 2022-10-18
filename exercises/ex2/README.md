@@ -1,4 +1,14 @@
-# Part 1: Create target subaccounts for transport
+# Exercise 2 - Set up SAP Cloud Transport Management
+
+In this exercise we will set up SAP Cloud Transport Management so that it can be used to perform imports of transport requests created by the CI&D service. This setup consists of several steps:
+- Create additional subaccounts which act as targets for the imports.
+- Subscribe to SAP Cloud Transport Management
+- Create a role collection and assign it to your user
+- Create a cTMS instance and a service key
+- Create destinations for deployment
+- Create transport nodes and routes
+
+## Create target subaccounts for transport
 
 1. Go to the BTP Cockpit of your SAP BTP Trial global account to the tab 'Account Explorer'.
 2. You should see (at least) one subaccount called 'trial', which was created when your Trial global account was set up.
@@ -46,8 +56,10 @@ Repeat the above steps for your second addtional subaccount. Call it for example
 You now have (at least) three subaccounts inside your Trail global account. 
 
 
-# Part 2: Enable SAP Cloud Transport Management for use
-## Subscribe to SAP Cloud Transport Management
+## Enable SAP Cloud Transport Management for use
+
+### Subscribe to SAP Cloud Transport Management
+
 The subaccount which has been created automatically when creating the BTP Trial global account (called 'trial' by default) has all the needed entitlements for enabling SAP Cloud Transport Management. We will use this subaccount for the exercise. 
 
 If you want to use another subaccount to enable cTMS you have to first make sure that the needed entitlements are available. Please see the [corresponding documentation](https://help.sap.com/docs/TRANSPORT_MANAGEMENT_SERVICE/7f7160ec0d8546c6b3eab72fb5ad6fd8/13894bed9e2d4b25aa34d03d002707f9.html) in that case.
@@ -65,7 +77,7 @@ If you want to use another subaccount to enable cTMS you have to first make sure
 
 For more details see [the documentation](https://help.sap.com/docs/TRANSPORT_MANAGEMENT_SERVICE/7f7160ec0d8546c6b3eab72fb5ad6fd8/7fe10fc1baae444e9315579786d623b9.html). Please note that the documentation refers to a non-trail environment. The plan to subscribe to here is called 'standard'.
 
-## Create role collection and assign it to your user
+### Create role collection and assign it to your user
 
 1. In your 'trial' subaccount open the **'Role Collections'** view (to be found in the 'Security' area).
 2. Click on the **'+'** icon.
@@ -85,13 +97,13 @@ For more details see [the documentation](https://help.sap.com/docs/TRANSPORT_MAN
 
 For more details see [the documentation](https://help.sap.com/docs/TRANSPORT_MANAGEMENT_SERVICE/7f7160ec0d8546c6b3eab72fb5ad6fd8/eb134e02d2074918bcc5af34f50fb19f.html).
 
-## Check your access to the Cloud Transport Manangement UI
+### Check your access to the Cloud Transport Manangement UI
 
 1. Open **Instances and Subscriptions**. It can be found in the area 'Services' in the navigation pane.
 2. Click on the link to **'Cloud Transport Management'**.
 3. The cTMS overview page should open.
 
-## Create a cTMS service instance and service key
+### Create a cTMS service instance and service key
 
 1. Open **Instances and Subscriptions**. It can be found in the area 'Services' in the navigation pane.
 2. Click on **Create**.
@@ -111,9 +123,9 @@ For more details see [the documentation](https://help.sap.com/docs/TRANSPORT_MAN
 The service key now created will be used to enable the CI&D service to upload content to cTMS and create a transport request.
 
 
-# Part 3: Set up transport landscape
+## Set up transport landscape
 
-## Create destinations
+### Create destinations
 
 You will now create destinations to deploy the content built by the CI&D service to the target subaccounts / spaces.
 1. Enter the subaccount in which you subscribed to Cloud Transport Management, normally this should be the one called 'trial'.
@@ -135,12 +147,12 @@ You will now create destinations to deploy the content built by the CI&D service
 13. Click **Save**.
 14. Click **Check Connection**. The return code should be '200: OK'. Otherwise re-check your entries.
 
-Now repeat these steps for the other two subaccounts you have created previously and name them for example 'TEST_MTA' and 'PROD_MTA'.
+Now repeat these steps for the other two subaccounts you have created previously and name the destinations for example 'TEST_MTA' and 'PROD_MTA'.
 You should now have a total of three destinations pointing to your three subaccounts.
 
-## Create transport landscape in cTMS
+### Create transport landscape in cTMS
 
-### Create transport nodes
+#### Create transport nodes
 
 1. Open the cTMS UI by entering the subaccount in which you have subscribed to cTMS (normally 'trial') and opening the **'Instances and Subscriptions'** view (to be found in the 'Services' area).
 2. In the 'Subscriptions' area click on the link of **'Cloud Transport Management'**.
@@ -182,7 +194,7 @@ Repeat these steps for the other two subaccounts (with some slight changes!):
 
 You should now have three transport nodes DEV, TEST and PROD.
 
-### Create transport routes
+#### Create transport routes
 
 1. Click on **Transport Routes** in the navigation pane.
 2. Click on the '+' icon.
