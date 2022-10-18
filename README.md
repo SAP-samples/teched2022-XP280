@@ -18,7 +18,7 @@ platform.
 
 To complete the exercises in this repository, please make sure that you meet the following prerequisites:
 
-* You have an [SAP Business Technology Platform (BTP) Trial Account](https://www.sap.com/products/technology-platform/trial.html).
+* You have an [SAP Business Technology Platform (BTP) Trial Account](https://developers.sap.com/tutorials/hcp-create-trial-account.html).
 * You have an account on [GitHub](https://github.com/signup).
 
 ## Exercises
