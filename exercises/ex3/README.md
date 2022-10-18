@@ -61,3 +61,7 @@ Return to your job in the SAP Continuous Integration and Delivery service.
 If you created a webhook in Exercise 1, your configured job should have already started automatically after you committed the changes to the file in GitHub. If you didn't create a webhook, click the blue "Run" button to start your job manually.
 
 Your job should now be successful, and not only run unit tests, but also perform an upload to SAP Cloud Transport Management.
+
+## Summary
+
+Congratulations! You've extended your CI/CD job by enabling **Additional Unit Tests** and **Release** Stage.
