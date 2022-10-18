@@ -1,4 +1,4 @@
-# Exercise 3 - Add TMS to the CICD job
+# Exercise 3 - Add TMS to the CI/CD Job
 
 In this exercise, you will extend your SAP Continuous Integration and Delivery pipeline with additional unit tests and an upload to SAP Cloud Transport Management.
 
@@ -15,7 +15,7 @@ In this exercise, we will create service key for SAP Cloud Transport Management 
 
 ### Create the Service Key Credential
 
-Procedure
+#### Procedure
 
 1. In the SAP BTP cockpit, navigate to the subaccount in which you’ve created an instance for SAP Cloud Transport Management.
 2. From the navigation area, choose Spaces and select your space in which you’ve created the Cloud Transport Management instance.
@@ -25,21 +25,11 @@ Procedure
 6. Next to the name of your service key, click on the 3 dots and then click "View"
 7. Copy the entire service key by clicking the "Copy JSON" button.
 8. In SAP Continuous Integration and Delivery, create a new Service Key credential and paste the copied service key into the respective text field.
-9. Enter a name for the service key. For example "tms-service-key""
+9. Enter a name for the service key. For example "tms-service-key".
 
 **Note:** For additional information, see [Creating Credentials](https://help.sap.com/docs/CONTINUOUS_DELIVERY/99c72101f7ee40d0b2deb4df72ba1ad3/6658c81f3e43456891852955b1ee11db.html)
 
-## Exercise 3.3 - Create the Transport Nodes and Route 
-
-Create nodes for your spaces or subaccounts, connect them through a transport route, and provide the respective data to SAP Continuous Integration and Delivery.
-
-### Procedure
-1. In SAP Cloud Transport Management, create a node for each of your development and production spaces or subaccounts. See [Create Transport Nodes](https://help.sap.com/docs/TRANSPORT_MANAGEMENT_SERVICE/7f7160ec0d8546c6b3eab72fb5ad6fd8/f71a4d5550cd453ea824d5b5c677969d.html).
-2. Connect the nodes through a transport route. See [Create Transport Routes](https://help.sap.com/docs/TRANSPORT_MANAGEMENT_SERVICE/7f7160ec0d8546c6b3eab72fb5ad6fd8/dddb74937a014aea8d3d76d740180597.html).
-3. In your job configuration in SAP Continuous Integration and Delivery, enter the name of your development node in the **Upload to SAP Cloud Transport Management** stage.
-4. When you've finished your job creation, choose **Add**.
-
-## Exercise 3.4 Activate the Release Stage of your job
+## Exercise 3.3 Activate the Release Stage of your job
 
 Configure Release Stage via providing corresponding mandorty parameters as described below.
 
@@ -51,12 +41,12 @@ Configure Release Stage via providing corresponding mandorty parameters as descr
 4. Choose Save.
 <br>![](/exercises/ex3/images/03_02_0010.png)
 
-## Exercise 3.5 - Run the Pipeline manually
+## Exercise 3.4 - Run the Pipeline manually
 
 1. Run your job by pressing the blue **Run** button on the top right.
 2. You should see that the build has failed in the **Additional Unit Tests** stage. Click on the stage to find more information.
 
-## Exercise 3.6 - Fix the test and GitHub commit
+## Exercise 3.5 - Fix the test and GitHub commit
 
 In the previous run of your pipeline, **Additional Unit Tests** are failing because one of the unit tests is trying to access a file that doesn't exist. Please follow points below for a fix.
 
@@ -64,7 +54,7 @@ In the previous run of your pipeline, **Additional Unit Tests** are failing beca
 <br>![](/exercises/ex3/images/03_04_0010.png)
 2. Replace "Update Component.js" with a meaningful commit message, like "Replace xml with json". Click "Commit changes" to save the file.
 
-## Exercise 3.7 - Check the Pipeline for success
+## Exercise 3.6 - Check the Pipeline for success
 
 Return to your job in the SAP Continuous Integration and Delivery service.
 
