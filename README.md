@@ -18,8 +18,8 @@ platform.
 
 The requirements to follow the exercises in this repository are...
 
-* [SAP Business Technology Platform (BTP) Trial Account](https://www.sap.com/products/technology-platform/trial.html)
-* [GitHub Account](https://github.com/signup)
+* You have an [SAP Business Technology Platform (BTP) Trial Account](https://www.sap.com/products/technology-platform/trial.html).
+* You have an account on [GitHub](https://github.com/signup).
 
 ## Exercises
 
