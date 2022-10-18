@@ -18,11 +18,11 @@ In this exercise, we will create service key for SAP Cloud Transport Management 
 #### Procedure
 
 1. In the SAP BTP cockpit, navigate to the subaccount in which you’ve created an instance for SAP Cloud Transport Management.
-2. From the navigation area, choose Spaces and select your space in which you’ve created the Cloud Transport Management instance.
-3. From the navigation area, choose Services > Instances.
+2. From the navigation area, choose **Spaces** and select your space in which you’ve created the Cloud Transport Management instance.
+3. From the navigation area, choose **Services** -> **Instances**.
 4. Choose the name of your service instance.
-5. From the navigation area, choose Service Keys.
-6. Next to the name of your service key, click on the 3 dots and then click "View"
+5. From the navigation area, choose **Service Keys**.
+6. Next to the name of your service key, click on the 3 dots and then click "View".
 7. Copy the entire service key by clicking the "Copy JSON" button.
 8. In SAP Continuous Integration and Delivery, create a new Service Key credential and paste the copied service key into the respective text field.
 9. Enter a name for the service key. For example "tms-service-key".
@@ -31,26 +31,26 @@ In this exercise, we will create service key for SAP Cloud Transport Management 
 
 ## Exercise 3.3 Activate the Release Stage of your job
 
-Configure `Release` Stage via providing corresponding mandorty parameters as described below.
+Configure `Release` Stage via providing corresponding mandatory parameters as described below.
 
 ### Upload to Cloud Transport Management
 
 1. Turn on **Upload to Cloud Transport Management** section under **Release** section via toggle button.
 2. Enter the name of the node for the upload to SAP Cloud Transport Management.
-3. To authenticate your pipeline against SAP Cloud Transport Management, choose the service key you just created from the dropdown list.
+3. To authenticate your pipeline against SAP Cloud Transport Management, choose the service key you just created from the drop-down list.
 4. Choose **Save**.
 <br>![](/exercises/ex3/images/03_02_0010.png)
 
 ## Exercise 3.4 - Run the Pipeline manually
 
 1. Run your job by pressing the blue **Run** button on the top right.
-2. You should see that the build has failed in the **Additional Unit Tests** stage. Click on the stage to find more information.
+2. You should see that the build has failed in the **Additional Unit Tests** stage. Click on the failed stage to find more information.
 
 ## Exercise 3.5 - Fix the test and GitHub commit
 
 In the previous run of your pipeline, **Additional Unit Tests** are failing because one of the unit tests is trying to access a file that doesn't exist. Please follow points below for a fix.
 
-1. Fix the test by providing the correct manifest file type. In your repository copy, go to the HTML5Module/webapp/Component.js file. Click on the pencil icon to edit the [file]((https://github.com/SAP-samples/teched2022-XP280/blob/main/HTML5Module/webapp/Component.js#L11)). Change line 11 from "xml" to "json".
+1. Fix the test by providing the correct manifest file type. In your repository copy, go to the `HTML5Module/webapp/Component.js` file. Click on the pencil icon to edit the file. Change line 11 from "xml" to "json".
 <br>![](/exercises/ex3/images/03_04_0010.png)
 2. Replace "Update Component.js" with a meaningful commit message, like "Replace xml with json". Click "Commit changes" to save the file.
 
