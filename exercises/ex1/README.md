@@ -2,7 +2,7 @@
 
 In this exercise, you will set up SAP Continuous Integration and Delivery and, in the service, create a job.
 
-## Exercise 1.0 - Set Up SAP Continuous Integration and Delivery
+## Exercise 1.1 - Set Up SAP Continuous Integration and Delivery
 
 ### Subscribe to SAP Continuous Integration and Delivery
 
@@ -77,7 +77,7 @@ Now, the user interface of SAP Continuous Integration and Delivery opens.
 > **Note:** If you get an authorization error when trying to access the service, please log out of the SAP Business Technology Platform and log back in again.
 
 
-## Exercise 1.1 Add Your Repository to SAP Continuous Integration and Delivery
+## Exercise 1.2 Add Your Repository to SAP Continuous Integration and Delivery
 
 Connect SAP Continuous Integration and Delivery with the repository in which your sources reside.
 
@@ -98,7 +98,7 @@ Connect SAP Continuous Integration and Delivery with the repository in which you
 <br>![](images/configure_repo.png)
 
 
-## Exercise 1.2 (Optional) Create a Webhook
+## Exercise 1.3 (Optional) Create a Webhook
 
 You can configure a webhook for your repository, which automatically triggers a build of your job when there is a change commit in the source code repository. 
 1. In the **Repositories** tab in SAP Continuous Integration and Delivery, choose your newly created repository, then choose **Webhook Data**.
@@ -122,7 +122,7 @@ As a result, the Webhook Data pop-up opens. This pop-up provides the information
 
 <br>![](images/webhook_config.png)
 
-## Exercise 1.3 Create and Trigger a Job in SAP Continuous Integration and Delivery
+## Exercise 1.4 Create and Trigger a Job in SAP Continuous Integration and Delivery
 
 1. In SAP Continuous Integration and Delivery, go to the **Jobs** tab and choose **+** _(Create job)_.
 
