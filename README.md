@@ -14,9 +14,9 @@ Management service for your development use cases. Both services run on SAP Busi
 Platform with the potential to be used as the default setup for any new development project on the
 platform.
 
-## Requirements
+## Prerequisites
 
-The requirements to follow the exercises in this repository are...
+To complete the exercises in this repository, please make sure that you meet the following prerequisites:
 
 * You have an [SAP Business Technology Platform (BTP) Trial Account](https://www.sap.com/products/technology-platform/trial.html).
 * You have an account on [GitHub](https://github.com/signup).
