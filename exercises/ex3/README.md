@@ -9,7 +9,7 @@ In this exercise, you will extend your SAP Continuous Integration and Delivery p
 3. In the **Stages** section of your job details, switch on **Additional Unit Tests** using the toggle button.
 <br>![](/exercises/ex3/images/03_03_0010.png)
 
-## Exercise 3.2 - Create the Service Key Credential for SAP Cloud Transport Management
+## Exercise 3.2 - Enable Upload to Cloud Transport Management
 
 In this exercise, we will create service key for SAP Cloud Transport Management from BTP cockpit.
 
