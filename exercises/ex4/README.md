@@ -2,6 +2,7 @@
 
 In this exercise we will trigger the import of a transport request which has been created by the job from the CI&D service. We will check the outcome of the import and the automatic forwarding of the transport request to the next node on your transport route.
 
+## Start import into development subaccount
 1. Access the cTMS UI by opening the 'Instances and Subscriptions' tab and clicking on the link to 'Cloud Transport Management'.
 2. Navigate to **Transport Nodes**.
 3. Click on the row with the first node in your transport route (should be called **DEV** if you followed the proposed naming convention).
