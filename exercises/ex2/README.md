@@ -64,7 +64,7 @@ Our demo application needs a Cloud Foundry memory entitlement to run. This is ne
 
 1. Go to the BTP cockpit of your global trial account holding the three subaccounts.
 2. Navigate to **Service Assignments** (to be found under 'Entitlements').
-3. Select **Cloud Foundry Runtime** from the drop-down 'Service'. You will see that all 4 units are assigned to one subaccount.
+3. Select **Cloud Foundry Runtime** from the drop-down 'Service'. You will see that all 4 units are assigned to one subaccount. ![Default entitlement distribution](images/ex2_entitlements_010.png)
 4. Navigate to **Entity Assignments** and click on the selector icon under 'Select Entities'.
 5. Select the subaccount holding the 4 Cloud Foundry entitlements (by default called 'trial') and click on **Select**.
 6. Scroll down to **Cloud Foundry Runtime** and reduce the number of Units to 2 by clicking on the '-' sign.
@@ -77,7 +77,7 @@ Our demo application needs a Cloud Foundry memory entitlement to run. This is ne
 13. Check that there is 1 Unit of Cloud Foundry Runtime MEMORY assigned to the subaccount and click **Save**.
 14. After saving is completed repeat these steps for your third subaccount (called 'Prod').
 15. Navigate to **Service Assignments** (to be found under 'Entitlements').
-16. Select **Cloud Foundry Runtime** from the drop-down 'Service'. Now the Cloud Foundry Runtime entitlements are distributed between the three subaccounts.
+16. Select **Cloud Foundry Runtime** from the drop-down 'Service'. Now the Cloud Foundry Runtime entitlements are distributed between the three subaccounts. ![Adapted entitlement distribution](images/ex2_entitlements_110.png)
 
 ## Enable SAP Cloud Transport Management for use
 
