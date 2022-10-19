@@ -13,8 +13,6 @@ In this exercise, you can extend your SAP Continuous Integration and Delivery pi
 
 To enable the `Release` stage, perform the following actions:
 
-### Upload to Cloud Transport Management
-
 1. In the **Release* stage, turn on **Upload to Cloud Transport Management** using the toggle.
 2. Enter the name of the node for the upload to SAP Cloud Transport Management.
 3. For **Service Key**, click on the drop down arrow and then on **Create Credentials**. You should see a window pop up.
@@ -29,24 +27,6 @@ To enable the `Release` stage, perform the following actions:
 12. Enter a name for the service key, for example "tms-service-key". Click "Create".
 13. Choose **Save**.
 <br>![](/exercises/ex3/images/03_01_0010.png)
-
-### Exercise 3.1.1 - Enable the Upload to SAP Cloud Transport Management
-
-In this exercise, we will create a service key credential using an already created service key for SAP Cloud Transport Management from BTP cockpit.
-
-### Create the Service Key Credential in CI/CD application
-
-#### Procedure
-
-1. In the SAP BTP cockpit, navigate to the subaccount in which you’ve created an instance for SAP Cloud Transport Management.
-2. From the navigation area, choose **Spaces** and select your space in which you’ve created the Cloud Transport Management instance.
-3. From the navigation area, choose **Services** -> **Instances**.
-4. Choose the name of your service instance.
-5. From the navigation area, choose **Service Keys**.
-6. Next to the name of your service key, click on the 3 dots and then click "View".
-7. Copy the entire service key by clicking the "Copy JSON" button.
-8. In SAP Continuous Integration and Delivery, create a new Service Key credential and paste the copied service key into the respective text field.
-9. Enter a name for the service key. For example "tms-service-key".
 
 ## Exercise 3.2 - Run the Pipeline manually
 
