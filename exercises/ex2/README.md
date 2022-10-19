@@ -10,6 +10,8 @@ In this exercise we will set up SAP Cloud Transport Management so that it can be
 
 ## Create target subaccounts for transport
 
+### Create test subaccount
+
 1. Go to the BTP Cockpit of your SAP BTP Trial global account to the tab 'Account Explorer'.
 2. You should see (at least) one subaccount called 'trial', which was created when your Trial global account was set up.
 3. You will now create two additional subaccounts which will be used as targets for transporting with SAP Cloud Transport Management.
@@ -32,6 +34,7 @@ In this exercise we will set up SAP Cloud Transport Management so that it can be
 20. Click on **Create**.
 21. Go back to the Account Explorer view of your Trail global account by clicking on its name in the breadcrumps on the top of the screen (besides the globe icon).
 
+### Create production subaccount
 
 Repeat the above steps for your second addtional subaccount. Call it for example 'Prod'.
 
@@ -54,6 +57,12 @@ Repeat the above steps for your second addtional subaccount. Call it for example
 40. Click on **Create**.
 
 You now have (at least) three subaccounts inside your Trail global account. 
+
+### Optional: Redistribute Cloud Foundry entitlements between the subaccounts
+
+Our demo application needs a Cloud Foundry memory entitlement to run. This is necessary for all subaccounts to which it should be deployed. In the Trial environment the initial subaccount receives by default all 4 available entitlements. If you want to deploy the application to the test and production environment as well in exercise 4 you have to redistribute the Cloud Foundry memory entitlement between the three subaccounts.
+
+1. 
 
 
 ## Enable SAP Cloud Transport Management for use
