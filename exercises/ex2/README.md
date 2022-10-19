@@ -128,6 +128,7 @@ The service key now created will be used to enable the CI&D service to upload co
 ### Create destinations
 
 You will now create destinations to deploy the content built by the CI&D service to the target subaccounts / spaces.
+
 1. Enter the subaccount in which you subscribed to Cloud Transport Management, normally this should be the one called 'trial'.
 2. Open the **'Destinations'** view (to be found in the Connectivity area).
 3. Click on **New Destination**.
