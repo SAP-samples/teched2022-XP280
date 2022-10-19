@@ -3,7 +3,7 @@
 In this exercise, you will create your own copy of this repository and optionally, set up a subaccount on your
 SAP Business Technology Platform (SAP BTP) Trial account.
 
-## Create a Copy of This Repository
+## Exercise 0.0 - Create a Copy of This Repository
 
 1. On the [main page of this repository](https://github.com/SAP-samples/teched2022-XP280), choose **Fork** on the top right.
 
@@ -18,7 +18,7 @@ SAP Business Technology Platform (SAP BTP) Trial account.
 
    <br>![](/exercises/ex0/images/fork_name.png)
 
-## (Optional) Set Up a Subaccount on Your SAP BTP Trial Account
+## Exercise 0.1 - (Optional) Set Up a Subaccount on Your SAP BTP Trial Account
 
 If [in your SAP BTP trial account](https://account.hanatrial.ondemand.com/), you don't have the automatically created subaccount named "trial",
 or it is created in a region other than "US East (VA)", please complete the following steps.
