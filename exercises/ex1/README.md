@@ -155,5 +155,5 @@ As a result, the Webhook Data pop-up opens. This pop-up provides the information
 
 Congratulations! You've now set up SAP Continuous Integration and Delivery, added your GitHub repository to the service, and created and triggered your first CI/CD job.
 
-Continue to - [Exercise 2 - Exercise 2 Description](../ex2/README.md)
+Continue to - [Exercise 2 - Set up SAP Cloud Transport Management](../ex2/README.md)
 
