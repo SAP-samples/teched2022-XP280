@@ -62,8 +62,22 @@ You now have (at least) three subaccounts inside your Trail global account.
 
 Our demo application needs a Cloud Foundry memory entitlement to run. This is necessary for all subaccounts to which it should be deployed. In the Trial environment the initial subaccount receives by default all 4 available entitlements. If you want to deploy the application to the test and production environment as well in exercise 4 you have to redistribute the Cloud Foundry memory entitlement between the three subaccounts.
 
-1. 
-
+1. Go to the BTP cockpit of your global trial account holding the three subaccounts.
+2. Navigate to **Service Assignments** (to be found under 'Entitlements').
+3. Select **Cloud Foundry Runtime** from the drop-down 'Service'. You will see that all 4 units are assigned to one subaccount.
+4. Navigate to **Entity Assignments** and click on the selector icon under 'Select Entities'.
+5. Select the subaccount holding the 4 Cloud Foundry entitlements (by default called 'trial') and click on **Select**.
+6. Scroll down to **Cloud Foundry Runtime** and reduce the number of Units to 2 by clicking on the '-' sign.
+7. Scroll up again and click on **Save**.
+8. After saving is completed use the Select Entities field again to deselect the 'trial' subaccount and select the 'Test' subaccount. 
+9. Click on **Select**.
+10. Click **Configure Entitlements**.
+11. Click on **Add Service Plans**.
+12. Scroll down to 'Cloud Foundry Runtime', click on this entry, select the checkbox **MEMORY** and click on **Add 1 Service Plan**.
+13. Check that there is 1 Unit of Cloud Foundry Runtime MEMORY assigned to the subaccount and click **Save**.
+14. After saving is completed repeat these steps for your third subaccount (called 'Prod').
+15. Navigate to **Service Assignments** (to be found under 'Entitlements').
+16. Select **Cloud Foundry Runtime** from the drop-down 'Service'. Now the Cloud Foundry Runtime entitlements are distributed between the three subaccounts.
 
 ## Enable SAP Cloud Transport Management for use
 
@@ -229,4 +243,4 @@ You should now see two tranport routes 'DEV_to_TEST' and 'TEST_to_PROD'.
 
 
 
-Continue to - [Exercise 3 - Excercise 3 ](../ex3/README.md)
+Continue to - [Exercise 3 - Extend Your CI/CD Pipeline With Additional Stages](../ex3/README.md)
