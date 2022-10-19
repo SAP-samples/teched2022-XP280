@@ -11,7 +11,7 @@ In this exercise, you can extend your SAP Continuous Integration and Delivery pi
 
 ## Exercise 3.1 - Enable the Release Stage
 
-To enable the `Release` stage, perform the following actions:
+To enable the `Release` stage, we will provided the desired node name and create a service key credential for SAP Cloud Transport Management.
 
 1. In the **Release* stage, turn on **Upload to Cloud Transport Management** using the toggle.
 2. Enter the name of the node for the upload to SAP Cloud Transport Management.
