@@ -1,31 +1,40 @@
-# Exercise 3 - Extend CI/CD Pipeline With Additional Stages
+# Exercise 3 - Extend Your CI/CD Pipeline With Additional Stages
 
-In this exercise, you will extend your SAP Continuous Integration and Delivery pipeline with additional stages i.e **Additional Unit Tests** and **Release**.
+In this exercise, you can extend your SAP Continuous Integration and Delivery pipeline with additional stages, for example, the **Additional Unit Tests** and **Release** stage.
 
 ## Exercise 3.0 - Enable Additional Unit Tests
 
-1. In the **Jobs** tab in SAP Continuous Integration and Delivery, choose the job you created in Exercise 1.
-2. Click **Edit** to make the changes required below.
-3. In the **Stages** section of your job details, switch on **Additional Unit Tests** using the toggle button.
+1. In the **Jobs** tab in SAP Continuous Integration and Delivery, choose the job you created in [Exercise 1](/exercises/ex1#exercise-13-create-and-trigger-a-job-in-sap-continuous-integration-and-delivery).
+2. Choose **Edit**.
+3. In the **Stages** section of your job details, switch on **Additional Unit Tests** using the toggle.
 <br>![](/exercises/ex3/images/03_03_0010.png)
 
-## Exercise 3.1 - Activate the Release Stage of your job
+## Exercise 3.1 - Enable the Release Stage
 
-Configure `Release` Stage via providing corresponding mandatory parameters as described below.
+To enable the `Release` stage, perform the following actions:
 
 ### Upload to Cloud Transport Management
 
-1. Turn on **Upload to Cloud Transport Management** section under **Release** section via toggle button.
+1. In the **Release* stage, turn on **Upload to Cloud Transport Management** using the toggle.
 2. Enter the name of the node for the upload to SAP Cloud Transport Management.
-3. To authenticate your pipeline against SAP Cloud Transport Management, choose the service key credential you just created from the drop-down list.
-4. Choose **Save**.
+3. For **Service Key**, click on the drop down arrow and then on **Create Credentials**. You should see a window pop up.
+4. In another window, open the SAP BTP cockpit and navigate to the subaccount in which you’ve created an instance for SAP Cloud Transport Management.
+5. From the navigation area, choose **Spaces** and select your space in which you’ve created the Cloud Transport Management instance.
+6. From the navigation area, choose **Services** -> **Instances**.
+7. Choose the name of your service instance.
+8. From the navigation area, choose **Service Keys**.
+9. Next to the name of your service key, click on the 3 dots and then click "View".
+10. Copy the entire service key by clicking the "Copy JSON" button.
+11. Back in SAP Continuous Integration and Delivery, paste the copied service key into the text field of the pop up window.
+12. Enter a name for the service key, for example "tms-service-key". Click "Create".
+13. Choose **Save**.
 <br>![](/exercises/ex3/images/03_01_0010.png)
 
-### Exercise 3.1.1 - Activate the Upload to SAP Cloud Transport Management
+### Exercise 3.1.1 - Enable the Upload to SAP Cloud Transport Management
 
 In this exercise, we will create a service key credential using an already created service key for SAP Cloud Transport Management from BTP cockpit.
 
-### Create the Service Key Credential
+### Create the Service Key Credential in CI/CD application
 
 #### Procedure
 
