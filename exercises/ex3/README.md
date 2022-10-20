@@ -15,8 +15,8 @@ In this exercise, you will extend your job in SAP Continuous Integration and Del
 To enable the **Release** stage in your SAP Continuous Integration and Delivery job, you need the name of the node for the upload to SAP Cloud Transport Management as well as a service key to authenticate your pipeline against it. We will provide these values to you.
 
 1. In the **Release** stage in your job details, switch on **Upload to Cloud Transport Management** using the toggle.
-2. Enter the name of the node for the upload to SAP Cloud Transport Management, which in this case is `DEV`
-3. For **Service Key**, click on the drop-down arrow and then on **Create Credentials**. As a result, the **Create Credentials** window pops up.
+2. Enter the name of the node for the upload to SAP Cloud Transport Management, which in this case is DEV.
+3. For **Service Key**, click on the drop-down arrow and then choose **Create Credentials**. As a result, the **Create Credentials** window pops up.
 4. In another browser window, open the SAP BTP cockpit and navigate to the subaccount in which you’ve created an instance for SAP Cloud Transport Management.
 5. From the navigation area, choose **Spaces** and select the space in which you’ve created the Cloud Transport Management instance.
 6. From the navigation area, choose **Services** → **Instances**.
@@ -44,16 +44,15 @@ In the previous run of your pipeline, **Additional Unit Tests** are failing beca
 
 <br>![](/exercises/ex3/images/03_03_0000.png)
 
-4. Replace `Update Component.js` with a meaningful commit message, for example, `Replace xml with json`.
+4. Replace Update Component.js in the text box with a meaningful commit message, for example, Replace xml with json.
 5. Choose **Commit changes** to save the changes.
 
 <br>![](/exercises/ex3/images/03_04_0000.png)
 
 ## Exercise 3.4 - Verify the Success of Your Pipeline
 
-Return to your job in SAP Continuous Integration and Delivery.
-
-If you created a webhook in Exercise 1, a build of your connected job is triggered automatically after committing the code changes in GitHub. If you didn't create a webhook, choose **Run** to start your job.
+1. Return to your job in SAP Continuous Integration and Delivery.
+2. If you created a webhook in Exercise 1, a build of your connected job is triggered automatically after committing the code changes in GitHub. If you didn't create a webhook, choose **Run** to start your job.
 
 As a result, a build is triggered and a new build tile appears in the **Builds** section of your job. Your job should now be successful, and not only run unit tests, but also perform an upload to SAP Cloud Transport Management.
 
