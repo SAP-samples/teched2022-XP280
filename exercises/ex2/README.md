@@ -4,7 +4,7 @@ In this exercise we will set up SAP Cloud Transport Management service so that i
 - Create additional subaccounts which act as targets for the imports
 - Subscribe to SAP Cloud Transport Management
 - Create a role collection and assign it to your user
-- Create an instance of Cloud Transport Maangement service and a service key
+- Create an instance of Cloud Transport Management service and a service key
 - Create destinations for deployment
 - Create transport nodes and routes
 
