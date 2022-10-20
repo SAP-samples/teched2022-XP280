@@ -60,7 +60,7 @@ You now have (at least) three subaccounts in your trial account.
 
 ### Optional: Redistribute Cloud Foundry Entitlements Among Your Subaccounts
 
-Our demo application needs a Cloud Foundry memory entitlement to run. This is necessary for all subaccounts to which it will be deployed. In the trial environment the initial subaccount receives all four available entitlements by default. To deploy the application also to the test and production environment, as required in exercise 4, you have to redistribute the Cloud Foundry memory entitlement among the three subaccounts.
+Our demo application needs a Cloud Foundry memory entitlement to run. This is necessary for all subaccounts to which it will be deployed. In the trial environment the initial subaccount receives all four available entitlements by default. To deploy the application also to the test and production environment, which is an optional part in exercise 4, you have to redistribute the Cloud Foundry memory entitlement among the three subaccounts.
 
 1. Go to the BTP cockpit of your global trial account holding the three subaccounts.
 2. Navigate to **Service Assignments** (to be found under **Entitlements**).
