@@ -8,7 +8,7 @@ In this exercise we will set up SAP Cloud Transport Management service so that i
 - Create destinations for deployment
 - Create transport nodes and routes
 
-## Create Target Subaccounts for Transport
+## Exercise 2.0 - Create Target Subaccounts for Transport
 
 ### Create the Test Subaccount
 
@@ -79,13 +79,13 @@ Our demo application needs a Cloud Foundry memory entitlement to run. This is ne
 15. Navigate to **Service Assignments** (to be found under **Entitlements**).
 16. Select **Cloud Foundry Runtime** from the **Service** dropdown menu. Now the Cloud Foundry Runtime entitlements are distributed among your three subaccounts. ![Adapted entitlement distribution](images/ex2_entitlements_110.png)
 
-## Enable SAP Cloud Transport Management for Use
+## Exercise 2.1 - Enable SAP Cloud Transport Management for Use
 
 ### Subscribe to SAP Cloud Transport Management
 
 The subaccount which has been created automatically when creating the BTP trial account (called *trial* by default) has all necessary entitlements for enabling SAP Cloud Transport Management. We will use this subaccount for the exercise.
 
-If you want to use another subaccount to enable Cloud Transport Management you have to first make sure that the necessary entitlements are available. Please see the [documentation: Configuring Entitlements to Cloud Transport Management](https://help.sap.com/docs/TRANSPORT_MANAGEMENT_SERVICE/7f7160ec0d8546c6b3eab72fb5ad6fd8/13894bed9e2d4b25aa34d03d002707f9.html) in that case.
+If you want to use another subaccount to enable Cloud Transport Management you have to first make sure that the necessary entitlements are available. Please see the documentation: [Configuring Entitlements to Cloud Transport Management](https://help.sap.com/docs/TRANSPORT_MANAGEMENT_SERVICE/7f7160ec0d8546c6b3eab72fb5ad6fd8/13894bed9e2d4b25aa34d03d002707f9.html) in that case.
 
 1. Open the BTP cockpit of your trial account.
 2. In the **Account Explorer** view click on the tile called **trial**.
@@ -98,7 +98,7 @@ If you want to use another subaccount to enable Cloud Transport Management you h
 9. Choose **View Subscription**.
 10. After a few seconds the status of the subscription should change to **Subscribed**.
 
-For more details, see [the documentation: Subscribing to Cloud Transport Management](https://help.sap.com/docs/TRANSPORT_MANAGEMENT_SERVICE/7f7160ec0d8546c6b3eab72fb5ad6fd8/7fe10fc1baae444e9315579786d623b9.html). Please note that the documentation refers to a non-trial environment. The plan to subscribe to here is called **standard**.
+For more details, see the documentation: [Subscribing to Cloud Transport Management](https://help.sap.com/docs/TRANSPORT_MANAGEMENT_SERVICE/7f7160ec0d8546c6b3eab72fb5ad6fd8/7fe10fc1baae444e9315579786d623b9.html). Please note that the documentation refers to a non-trial environment. The plan to subscribe to here is called **standard**.
 
 ### Create a Role Collection and Assign it to Your User
 
@@ -118,7 +118,7 @@ For more details, see [the documentation: Subscribing to Cloud Transport Managem
 14. Click on the plus (**+**) sign.
 15. Choose **Save**.
 
-For more details, see [the documentation: Setting Up Role Collections](https://help.sap.com/docs/TRANSPORT_MANAGEMENT_SERVICE/7f7160ec0d8546c6b3eab72fb5ad6fd8/eb134e02d2074918bcc5af34f50fb19f.html).
+For more details, see the documentation: [Setting Up Role Collections](https://help.sap.com/docs/TRANSPORT_MANAGEMENT_SERVICE/7f7160ec0d8546c6b3eab72fb5ad6fd8/eb134e02d2074918bcc5af34f50fb19f.html).
 
 ### Check your Access to the Cloud Transport Manangement UI
 
@@ -141,12 +141,12 @@ For more details, see [the documentation: Setting Up Role Collections](https://h
 11. Choose a name for the service key, for example *TMS_SK*.
 12. Choose **Create**.
 
-For more details, see [the documentation: Creating a Service Instance and a Service Key](https://help.sap.com/docs/TRANSPORT_MANAGEMENT_SERVICE/7f7160ec0d8546c6b3eab72fb5ad6fd8/f44956035ce54684b1dbb9e4d23c37d2.html).
+For more details, see the documentation: [Creating a Service Instance and a Service Key](https://help.sap.com/docs/TRANSPORT_MANAGEMENT_SERVICE/7f7160ec0d8546c6b3eab72fb5ad6fd8/f44956035ce54684b1dbb9e4d23c37d2.html).
 
 The new service key will be used to enable the SAP Continuous Integration and Delivery service to upload content to SAP Cloud Transport Management service and to create a transport request.
 
 
-## Set Up the Transport Landscape
+## Exercise 2.2 - Set Up the Transport Landscape
 
 ### Create Destinations
 
