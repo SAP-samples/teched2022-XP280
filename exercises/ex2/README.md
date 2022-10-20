@@ -17,7 +17,7 @@ In this exercise we will set up SAP Cloud Transport Management service so that i
 3. You will now create two additional subaccounts that will be used as targets for transporting with SAP Cloud Transport Management.
 4. Choose **Create -> Subaccount**.
 5. Enter a **Display Name** of your choice, for example *Test*.
-6. Enter a **Subdomain** name. Please note that this name must be unique in your region. So you might want to include some characters specific to your trial account. The input screen provides you with a proposal when you start typing in the **Display Name** field.
+6. Enter a **Subdomain** name. Please note that this name must be unique in your region. The input screen provides you with a proposal when you start typing in the **Display Name** field. Accept this proposal.
 7. As **Region** choose the region of your trial account.
 8. Choose **Create**.
 9. The creation of the subaccount takes a few seconds.
@@ -32,11 +32,11 @@ In this exercise we will set up SAP Cloud Transport Management service so that i
 18. Choose a **Space Name**, for example *Test*.
 19. Make sure that your user gets the roles **Space Manager** and **Space Developer** assigned. This is the default.
 20. Choose **Create**.
-21. Go back to the **Account Explorer** view of your trial account by clicking on its name in the breadcrumbs on the top of the screen (next to the globe icon).
+21. Go back to the **Account Explorer** view of your trial account by clicking on its name in the breadcrumbs on the top of the screen (next to the globe icon). ![Navigate to global account](images/ex2_subaccounts_010.png)
 
 ### Create the Production Subaccount
 
-Repeat the previous steps for your production subaccount that you can call, for example, *Prod*.
+The steps for creating the second additional subaccount are the same as in the above section, but the subaccount needs a different name. For your convenience they've been written again in this section with the new name needed. 
 
 22. Choose **Create -> Subaccount**.
 23. Enter a **Display Name** of your choice, for example *Prod*.
@@ -116,7 +116,7 @@ For more details, see [the documentation: Subscribing to Cloud Transport Managem
 12. Choose **Edit**.
 13. On the **Users** tab enter the email address of your trial account user in the **ID** field.
 14. Click on the plus (**+**) sign.
-15. Choose **Save**
+15. Choose **Save**.
 
 For more details, see [the documentation: Setting Up Role Collections](https://help.sap.com/docs/TRANSPORT_MANAGEMENT_SERVICE/7f7160ec0d8546c6b3eab72fb5ad6fd8/eb134e02d2074918bcc5af34f50fb19f.html).
 
