@@ -1,4 +1,4 @@
-# Exercise 1 - Create a CI/CD Job
+# Exercise 1 - Creating a Job in the SAP Continuous Integration and Delivery service
 
 In this exercise, you will set up SAP Continuous Integration and Delivery and, in the service, create a job.
 
