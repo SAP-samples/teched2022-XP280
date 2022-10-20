@@ -10,7 +10,7 @@ In this exercise, you will set up SAP Continuous Integration and Delivery and, i
 
 2. In the text box, enter and search for `continuous`.
 
-3. Click on the three dots **...** on the **Continuous Integration & Delivery** tile and choose **Create**.
+3. Click on the three dots (**...**) on the **Continuous Integration & Delivery** tile and choose **Create**.
 
    <br>![](/exercises/ex1/images/create_subscription.png)
 
@@ -55,7 +55,7 @@ Delivery.
 
    <br>![](/exercises/ex1/images/click_on_user.png)
 
-3. In the **Role Collections** overview of your user entry, click on the three dots **...** and choose **Assign Role Collection**.
+3. In the **Role Collections** overview of your user entry, click on the three dots (**...**) and choose **Assign Role Collection**.
 
    <br>![](/exercises/ex1/images/assign_role.png)
 
