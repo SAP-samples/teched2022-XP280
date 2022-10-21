@@ -49,4 +49,4 @@ You now have everything you need to successfully go through this TechEd session:
 
 Please continue to the next exercise:
 
-- [Exercise 1 - Creating a Job in the SAP Continuous Integration and Delivery service](../ex1/README.md)
+- [Exercise 1 - Create a Job in the SAP Continuous Integration and Delivery service](../ex1/README.md)
