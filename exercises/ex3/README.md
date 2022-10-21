@@ -52,7 +52,7 @@ In the previous run of your pipeline, **Additional Unit Tests** are failing beca
 ## Exercise 3.4 - Verify the Success of Your Pipeline
 
 1. Return to your job in SAP Continuous Integration and Delivery.
-2. If you created a webhook in Exercise 1, a build of your connected job is triggered automatically after committing the code changes in GitHub. If you didn't create a webhook, choose **Run** to start your job.
+2. If you created a webhook in [Exercise 1](/exercises/ex1#exercise-12-optional-create-a-webhook), a build of your connected job is triggered automatically after committing the code changes in GitHub. If you didn't create a webhook, choose **Run** to start your job.
 
 As a result, a build is triggered and a new build tile appears in the **Builds** section of your job. Your job should now be successful, and not only run unit tests, but also perform an upload to SAP Cloud Transport Management.
 

@@ -1,7 +1,7 @@
 # Exercise 0 - Getting Started
 
 In this exercise, you will create your own copy of this repository and optionally, set up a subaccount on your
-SAP Business Technology Platform (SAP BTP) Trial account.
+[SAP Business Technology Platform (SAP BTP) Trial account](https://account.hanatrial.ondemand.com/trial/#/home/trial).
 
 ## Exercise 0.0 - Create a Copy of This Repository
 
@@ -49,4 +49,4 @@ You now have everything you need to successfully go through this TechEd session:
 
 Please continue to the next exercise:
 
-- [Exercise 1 - Creating a Job in the SAP Continuous Integration and Delivery service](../ex1/README.md)
+- [Exercise 1 - Create a Job in the SAP Continuous Integration and Delivery service](../ex1/README.md)
