@@ -26,7 +26,7 @@ To complete the exercises in this repository, please make sure that you meet the
 - [Exercise 0 - Getting Started](exercises/ex0#exercise-0---getting-started)
     - [Exercise 0.0 - Create a Copy of This Repository](exercises/ex0#exercise-00---create-a-copy-of-this-repository)
     - [Exercise 0.1 - (Optional) Set Up a Subaccount on Your SAP BTP Trial Account](exercises/ex0#exercise-01---optional-set-up-a-subaccount-on-your-sap-btp-trial-account)
-- [Exercise 1 - Create a CI/CD Job](exercises/ex1#exercise-1---create-a-cicd-job)
+- [Exercise 1 - Create a Job in the SAP Continuous Integration and Delivery service](exercises/ex1#exercise-1---create-a-job-in-the-sap-continuous-integration-and-delivery-service)
     - [Exercise 1.0 - Set Up SAP Continuous Integration and Delivery](exercises/ex1#exercise-10---set-up-sap-continuous-integration-and-delivery)
     - [Exercise 1.1 - Add Your Repository to SAP Continuous Integration and Delivery](exercises/ex1#exercise-11-add-your-repository-to-sap-continuous-integration-and-delivery)
     - [Exercise 1.2 - (Optional) Create a Webhook](exercises/ex1#exercise-12-optional-create-a-webhook)
