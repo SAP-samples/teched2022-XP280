@@ -44,7 +44,7 @@ In the previous run of your pipeline, **Additional Unit Tests** are failing beca
 
 <br>![](/exercises/ex3/images/03_03_0000.png)
 
-4. Replace Update Component.js in the text box with a meaningful commit message, for example, Replace xml with json.
+4. Replace `Update Component.js` in the text box with a meaningful commit message, for example, `Replace xml with json`.
 5. Choose **Commit changes** to save the changes.
 
 <br>![](/exercises/ex3/images/03_04_0000.png)
