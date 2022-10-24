@@ -24,7 +24,7 @@ The import starts and runs for a few minutes.
 1. From the navigation area, choose **Landscape Visualization**.
 2. The **DEV** node shows one transport in status **Succeeded**.
 3. The **TEST** node shows one transport in status **Initial/Repeatable**.
-4. Choose the **TEST**.
+4. Choose the **TEST** node.
 5. Choose **Go to this node's import queue** on the right side of the pane.
 6. As a result, the same transport request is displayed in the import queue of the **TEST** node. 
 You can now optionally trigger the import into your test subaccount if you performed the entitlement redistribution in [Exercise 2](../ex2#optional-redistribute-cloud-foundry-entitlements-among-your-subaccounts). This will forward the transport request to the **PROD** node's import queue.
