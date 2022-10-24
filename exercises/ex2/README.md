@@ -13,7 +13,7 @@ In this exercise we will set up SAP Cloud Transport Management service so that i
 ### Create the Test Subaccount
 
 1. Go to the BTP cockpit of your SAP BTP trial account (global account) to the **Account Explorer**  tab.
-2. You should see (at least) one subaccount called **trial**, which was created when your trial account was set up.
+2. You should see (at least) one subaccount called **trial**, which was created when your trial account was set up. (Or you should see the **Dev** subaccount if you created it in [Exercise 0](../ex0#exercise-01---optional-set-up-a-subaccount-on-your-sap-btp-trial-account))
 3. You will now create two additional subaccounts that will be used as targets for transporting with SAP Cloud Transport Management.
 4. Choose **Create -> Subaccount**.
 5. Enter a **Display Name** of your choice, for example *Test*.
@@ -102,7 +102,7 @@ For more details, see the documentation: [Subscribing to Cloud Transport Managem
 
 ### Create a Role Collection and Assign it to Your User
 
-1. In your *trial* subaccount open the **Role Collections** view (to be found in the **Security** area).
+1. In your *trial* subaccount (or *Dev* subaccount if you created it in [Exercise 0](../ex0#exercise-01---optional-set-up-a-subaccount-on-your-sap-btp-trial-account)) open the **Role Collections** view (to be found in the **Security** area).
 2. Click on the plus (**+**) sign.
 3. Enter a name for the role collection, for example `TMS Admin`.
 4. Choose **Create**.
@@ -111,7 +111,7 @@ For more details, see the documentation: [Subscribing to Cloud Transport Managem
 7. Click on the plus (**+**) sign in the row of the **Administrator** template role.
 8. Assign the role to the new role collection by selecting the checkbox.
 9. Choose **Add**.
-10. In your *trial* subaccount open the **Role Collections** view (to be found in the **Security** area).
+10. In your *trial* subaccount (or *Dev* subaccount if you created it in [Exercise 0](../ex0#exercise-01---optional-set-up-a-subaccount-on-your-sap-btp-trial-account)) open the **Role Collections** view (to be found in the **Security** area).
 11. In the list of role collections click in the row with the new role collection.
 12. Choose **Edit**.
 13. On the **Users** tab enter the email address of your trial account user in the **ID** field.
@@ -152,14 +152,14 @@ The new service key will be used to enable the SAP Continuous Integration and De
 
 You will now create destinations that will be used to deploy the content built by the SAP Continuous Integration and Delivery service to the target subaccounts / spaces.
 
-1. Enter the subaccount in which you subscribed to Cloud Transport Management. By default, this should be the one called *trial*.
+1. Enter the subaccount in which you subscribed to Cloud Transport Management. By default, this should be the one called *trial*. If you created a subaccount in [Exercise 0](../ex0#exercise-01---optional-set-up-a-subaccount-on-your-sap-btp-trial-account), please use *Dev*.
 2. Open the **Destinations** view (to be found in the **Connectivity** area in the navigation pane).
 3. Choose **New Destination**.
 4. Enter a **Name** for the destination, for example *DEV_MTA*.
 5. Leave the **Type** set to **HTTP**.
 6. Optionally enter a description.
 7. The **URL** follows this pattern: `https://deploy-service.cfapps.<default-domain>/slprot/<myorg>/<myspace>/slp`.
-    - The `default-domain` depends on the region your trial subaccount runs in. You can determine it by opening the **Overview** tab of your subaccount in a second browser tab window. In the **Cloud Foundry Environment** section you will find the **API Endpoint**  entry. The part that follows `https://api.cf.` would be the default domain, for example `us10.hana.ondemand.com`.
+    - The `default-domain` depends on the region your subaccount runs in. You can determine it by opening the **Overview** tab of your subaccount in a second browser tab window. In the **Cloud Foundry Environment** section you will find the **API Endpoint**  entry. The part that follows `https://api.cf.` would be the default domain, for example `us10.hana.ondemand.com`.
     - In the same section you also find the information for `myorg` and `myspace`.
     - `myorg` can be found under **Org Name**.
     - `myspace` can be found to the right in the **Spaces** table in the **Name** column.
@@ -178,7 +178,7 @@ You should now have a total of three destinations pointing to your three subacco
 
 #### Create Transport Nodes
 
-1. Open the UI of SAP Cloud Transport Management Service by entering the subaccount in which you have subscribed to the service (normally *trial*) and opening the **Instances and Subscriptions** view (to be found in the **Services** area).
+1. Open the UI of SAP Cloud Transport Management Service by entering the subaccount in which you have subscribed to the service (normally *trial*, but is *Dev* if you created a subaccount in [Exercise 0](../ex0#exercise-01---optional-set-up-a-subaccount-on-your-sap-btp-trial-account))) and opening the **Instances and Subscriptions** view (to be found in the **Services** area).
 2. In the **Subscriptions** area click on the **Cloud Transport Management** link.
 3. The Overview page of Cloud Transport Management opens.
 4. In the navigation pane click on **Transport Nodes**.
