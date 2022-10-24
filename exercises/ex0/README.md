@@ -30,7 +30,7 @@ or it is created in a region other than "US East (VA)", please complete the foll
 1. For **Region**, choose `US East (VA)`.
 
 1. Enter a **Display Name** and a **Description**. We chose the following:
-   > Display Name: `cicdTrial`
+   > Display Name: `Dev`
    >
    > Description: `Subaccount for TechEd 2022 session XP280: Combining SAP Continuous Integration and Delivery with SAP Cloud Transport Management to easily deploy to a productive system.`
 
