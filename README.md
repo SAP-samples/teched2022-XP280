@@ -42,7 +42,7 @@ To complete the exercises in this repository, please make sure that you meet the
     - [Exercise 3.3 - Fix the Test and Commit Changes to GitHub](exercises/ex3#exercise-33---fix-the-test-and-commit-changes-to-github)
     - [Exercise 3.4 - Verify the Success of Your Pipeline](exercises/ex3#exercise-34---verify-the-success-of-your-pipeline)
 - [Exercise 4 - Perform imports with SAP Cloud Transport Management](exercises/ex4#exercise-4---perform-imports-with-sap-cloud-transport-management)
-    - [Exercise 4.0 - Start import into Development Subaccount](exercises/ex4#exercise-40---start-import-into-development-subaccount)
+    - [Exercise 4.0 - Start the Import to Your Development Subaccount](exercises/ex4#exercise-40---start-import-into-development-subaccount)
     - [Exercise 4.1 - Check the Transport Log](exercises/ex4#exercise-41---check-the-transport-log)
     - [Exercise 4.2 - Verify Automatic Forwarding to Next Transport Node](exercises/ex4#exercise-42---verify-automatic-forwarding-to-next-transport-node)
 
