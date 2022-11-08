@@ -59,3 +59,5 @@ As a result, a build is triggered and a new build tile appears in the **Builds**
 ## Summary
 
 Congratulations! You've extended your CI/CD job with the **Additional Unit Tests** and **Release** stages.
+
+Continue to [Exercise 4 - Perform imports with SAP Cloud Transport Management](../ex4/README.md).
