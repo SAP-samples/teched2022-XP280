@@ -18,36 +18,7 @@ In this exercise, you will set up SAP Continuous Integration and Delivery and, i
 
 4. In the **New Instance or Subscription** pop-up, leave the default settings and choose **Create**.
 
-### (Optional) Add the Correct Entitlements
-
-If in the **Service Marketplace** in your subaccount, you didn't see the **Continuous Integration & Delivery** tile,
-execute the following steps.
-
-1. In your subaccount in the SAP BTP cockpit, choose **Entitlements**.
-
-2. In the **Entitlements** overview of your subaccount, choose **Configure Entitlements**.
-
-   <br>![](/exercises/ex1/images/configure_entitlements.png)
-
-3. Choose **Add Service Plans**.
-
-   <br>![](/exercises/ex1/images/add_service_plans.png)
-
-4. In the text box, enter and search for `continuous` and choose **Continuous Integration & Delivery**.
-
-5. In the **Service Details: Continuous Integration & Delivery** pane, check the box next to **trial (Application)** and choose **Add 1 Service Plan**.
-
-   <br>![](/exercises/ex1/images/add_service_plan.png)
-
-6. Back in the **Entitlements** overview of your subaccount, choose **Save**.
-
-   <br>![](/exercises/ex1/images/save_entitlements.png)
-
-You can now go back to the previous section to subscribe to SAP Continuous Integration and
-Delivery.
-
 ### Add the Required Permissions
-
 
 1. In your subaccount in the SAP BTP cockpit, choose **Security** → **Users**.
  
