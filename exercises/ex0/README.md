@@ -21,8 +21,6 @@ Please complete the following steps, if
 
 1. In your SAP BTP trial account, choose **Create**, and from the drop-down list, choose **Subaccount**.
 
-   <br>![](/exercises/ex0/images/subaccount_button.png)
-
 1. For **Region**, choose `US East (VA)`.
 
 1. Enter a **Display Name** and a **Description**. We chose the following:
@@ -47,8 +45,6 @@ If in the **Service Marketplace** in your subaccount, you didn't see the **Conti
 
 3. Choose **Add Service Plans**.
 
-   <br>![](/exercises/ex1/images/add_service_plans.png)
-
 4. In the text box, enter and search for `continuous` and choose **Continuous Integration & Delivery**.
 
 5. In the **Service Details: Continuous Integration & Delivery** pane, check the box next to **trial (Application)** and choose **Add 1 Service Plan**.
@@ -56,8 +52,6 @@ If in the **Service Marketplace** in your subaccount, you didn't see the **Conti
    <br>![](/exercises/ex1/images/add_service_plan.png)
 
 6. Back in the **Entitlements** overview of your subaccount, choose **Save**.
-
-   <br>![](/exercises/ex1/images/save_entitlements.png)
 
 Your new subaccount `cicdTrial` has now all the prerequisites to run this session.
 
