@@ -15,8 +15,9 @@ In this exercise, you will create your own copy of this repository and optionall
 
 ## Exercise 0.1 - (Optional) Set Up a Subaccount on Your SAP BTP Trial Account
 
-If [in your SAP BTP trial account](https://account.hanatrial.ondemand.com/), you don't have the automatically created subaccount named "trial",
-or it is created in a region other than "US East (VA)", please complete the following steps.
+Please complete the following steps, if
+* you don't have the automatically created subaccount named "trial" [in your SAP BTP trial account](https://account.hanatrial.ondemand.com/), or
+* your "trial" subaccount is in a region other than "US East (VA)".
 
 1. In your SAP BTP trial account, choose **Create**, and from the drop-down list, choose **Subaccount**.
 
