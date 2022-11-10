@@ -67,17 +67,18 @@ Our demo application needs a Cloud Foundry memory entitlement to run. This is ne
 3. Select **Cloud Foundry Runtime** from the drop-down 'Service'. You will see that all 4 units are assigned to one subaccount. ![Default entitlement distribution](images/ex2_entitlements_010.png)
 4. Navigate to **Entity Assignments** and click on the selector icon under **Select Entities**.
 5. Select the subaccount holding the four Cloud Foundry entitlements (by default called *trial*) and choose **Select**.
-6. Scroll down to **Cloud Foundry Runtime** and use the minus (**-**) sign to reduce the number of Units to two (**2**) .
-7. Scroll up again and choose **Save**.
-8. After saving is completed use the **Select Entities** field again to deselect the **trial** subaccount and select the **Test** subaccount.
-9. Choose **Select**.
-10. Choose **Configure Entitlements**.
-11. Choose **Add Service Plans**.
-12. Scroll down to **Cloud Foundry Runtime**, click on this entry, select the **MEMORY** checkbox and click on **Add 1 Service Plan**.
-13. Check that there is **1 Unit** of **Cloud Foundry Runtime MEMORY** assigned to the subaccount and choose **Save**.
-14. After saving is completed repeat these steps for your **Prod** subaccount.
-15. Navigate to **Service Assignments** (to be found under **Entitlements**).
-16. Select **Cloud Foundry Runtime** from the **Service** dropdown menu. Now the Cloud Foundry Runtime entitlements are distributed among your three subaccounts. ![Adapted entitlement distribution](images/ex2_entitlements_110.png)
+6. Choose **Configure Entitlements**.
+7. Scroll down to **Cloud Foundry Runtime** and use the minus (**-**) sign to reduce the number of Units to two (**2**) .
+8. Scroll up again and choose **Save**.
+9. After saving is completed use the **Select Entities** field again to deselect the **trial** subaccount and select the **Test** subaccount.
+10. Choose **Select**.
+11. Choose **Configure Entitlements**.
+12. Choose **Add Service Plans**.
+13. Scroll down to **Cloud Foundry Runtime**, click on this entry, select the **MEMORY** checkbox and click on **Add 1 Service Plan**.
+14. Check that there is **1 Unit** of **Cloud Foundry Runtime MEMORY** assigned to the subaccount and choose **Save**.
+15. After saving is completed repeat these steps for your **Prod** subaccount.
+16. Navigate to **Service Assignments** (to be found under **Entitlements**).
+17. Select **Cloud Foundry Runtime** from the **Service** dropdown menu. Now the Cloud Foundry Runtime entitlements are distributed among your three subaccounts. ![Adapted entitlement distribution](images/ex2_entitlements_110.png)
 
 ## Exercise 2.1 - Enable SAP Cloud Transport Management for Use
 
