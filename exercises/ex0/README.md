@@ -7,8 +7,6 @@ In this exercise, you will create your own copy of this repository and optionall
 
 1. On the [main page of this repository](https://github.com/SAP-samples/teched2022-XP280), choose **Fork** on the top right.
 
-   <br>![](/exercises/ex0/images/fork_button.png)
-
 1. Make sure that the **Owner** matches the GitHub account that you want to use for this session. All the other information can remain the same.
 
    <br>![](/exercises/ex0/images/fork_details.png)
