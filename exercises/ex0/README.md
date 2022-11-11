@@ -43,7 +43,7 @@ or it is created in a region other than "US East (VA)", please complete the foll
 
 If in the **Service Marketplace** in your subaccount, you didn't see the **Continuous Integration & Delivery** tile, execute the following steps.
 
-1. In your subaccount in the SAP BTP cockpit, choose **Entitlements**.
+1. In your global account in the SAP BTP cockpit, choose **Entitlements**.
 
 2. In the **Entitlements** overview of your subaccount, choose **Configure Entitlements**.
 
