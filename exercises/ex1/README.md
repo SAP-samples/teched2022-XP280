@@ -62,7 +62,8 @@ Connect SAP Continuous Integration and Delivery with the repository in which you
 
 <br>![](images/clone_url.png)
 
-4. Paste it into the **Clone URL** field in the **Add Repository** pop-up in SAP Continuous Integration and Delivery. Then, remove the `.git` in the URL suffix, so that it looks as follows: `https://github.com/youruser/teched2022-XP280`.
+4. Paste it into the **Clone URL** field in the **Add Repository** pop-up in SAP Continuous Integration and Delivery. 
+
 5. Enter the **Name** for your repository and leave the rest of the fields as they are.
 6. Choose **Add**.
  
