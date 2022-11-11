@@ -39,14 +39,38 @@ or it is created in a region other than "US East (VA)", please complete the foll
 1. To open your newly created subaccount, click on its name. The next exercises will all be completed within this
    subaccount.
 
+### Exercise 0.1 - (Optional) Add the Required Entitlements
+
+If in the **Service Marketplace** in your subaccount, you didn't see the **Continuous Integration & Delivery** tile, execute the following steps.
+
+1. In your subaccount in the SAP BTP cockpit, choose **Entitlements**.
+
+2. In the **Entitlements** overview of your subaccount, choose **Configure Entitlements**.
+
+   <br>![](/exercises/ex1/images/configure_entitlements.png)
+
+3. Choose **Add Service Plans**.
+
+   <br>![](/exercises/ex1/images/add_service_plans.png)
+
+4. In the text box, enter and search for `continuous` and choose **Continuous Integration & Delivery**.
+
+5. In the **Service Details: Continuous Integration & Delivery** pane, check the box next to **trial (Application)** and choose **Add 1 Service Plan**.
+
+   <br>![](/exercises/ex1/images/add_service_plan.png)
+
+6. Back in the **Entitlements** overview of your subaccount, choose **Save**.
+
+   <br>![](/exercises/ex1/images/save_entitlements.png)
+
+Your new subaccount `cicdTrial` has now all the prerequisites to run this session.
+
 ## Summary
 
 You now have everything you need to successfully go through this TechEd session:
 
-- Your own GitHub repository
-- A subaccount in the correct region in your SAP Business Technology Platform (SAP BTP) trial
+- Your own fork of the session's GitHub repository
+- A subaccount in the correct region in your SAP BTP trial
   account
 
-Please continue to the next exercise:
-
-- [Exercise 1 - Create a Job in the SAP Continuous Integration and Delivery service](../ex1/README.md)
+Please continue to the next exercise, [Exercise 1 - Create a Job in the SAP Continuous Integration and Delivery service](../ex1/README.md).
