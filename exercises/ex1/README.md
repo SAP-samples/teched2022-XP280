@@ -14,7 +14,7 @@ In this exercise, you will set up SAP Continuous Integration and Delivery and, i
 
    <br>![](/exercises/ex1/images/create_subscription.png)
 
- > **Note:** If you don't see the **Continuous Integration & Delivery** tile when you search for it, please skip to the next section for adding the correct entitlements first and then come back.
+ > **Note:** If you don't see the **Continuous Integration & Delivery** tile when you search for it, please go back to [Exercise 0.1](../ex0/README.md#exercise-01---optional-add-the-required-entitlements) for adding the correct entitlements first and then come back.
 
 4. In the **New Instance or Subscription** pop-up, leave the default settings and choose **Create**.
 
