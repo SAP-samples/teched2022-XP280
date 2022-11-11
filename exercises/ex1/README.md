@@ -14,40 +14,11 @@ In this exercise, you will set up SAP Continuous Integration and Delivery and, i
 
    <br>![](/exercises/ex1/images/create_subscription.png)
 
- > **Note:** If you don't see the **Continuous Integration & Delivery** tile when you search for it, please skip to the next section for adding the correct entitlements first and then come back.
+ > **Note:** If you don't see the **Continuous Integration & Delivery** tile when you search for it, please go back to [Exercise 0.1](../ex0/README.md#exercise-01---optional-add-the-required-entitlements) for adding the correct entitlements first and then come back.
 
 4. In the **New Instance or Subscription** pop-up, leave the default settings and choose **Create**.
 
-### (Optional) Add the Correct Entitlements
-
-If in the **Service Marketplace** in your subaccount, you didn't see the **Continuous Integration & Delivery** tile,
-execute the following steps.
-
-1. In your subaccount in the SAP BTP cockpit, choose **Entitlements**.
-
-2. In the **Entitlements** overview of your subaccount, choose **Configure Entitlements**.
-
-   <br>![](/exercises/ex1/images/configure_entitlements.png)
-
-3. Choose **Add Service Plans**.
-
-   <br>![](/exercises/ex1/images/add_service_plans.png)
-
-4. In the text box, enter and search for `continuous` and choose **Continuous Integration & Delivery**.
-
-5. In the **Service Details: Continuous Integration & Delivery** pane, check the box next to **trial (Application)** and choose **Add 1 Service Plan**.
-
-   <br>![](/exercises/ex1/images/add_service_plan.png)
-
-6. Back in the **Entitlements** overview of your subaccount, choose **Save**.
-
-   <br>![](/exercises/ex1/images/save_entitlements.png)
-
-You can now go back to the previous section to subscribe to SAP Continuous Integration and
-Delivery.
-
 ### Add the Required Permissions
-
 
 1. In your subaccount in the SAP BTP cockpit, choose **Security** → **Users**.
  
@@ -55,11 +26,11 @@ Delivery.
 
    <br>![](/exercises/ex1/images/click_on_user.png)
 
-3. In the **Role Collections** overview of your user entry, click on the three dots (**...**) and choose **Assign Role Collection**.
+3. In the **Role Collections** overview of your user entry, click on **Assign Role Collection** or, if the button is not visible, click the three dots (**...**) and choose **Assign Role Collection**.
 
    <br>![](/exercises/ex1/images/assign_role.png)
 
-4. Check the boxes for **CICD Service Administrator** and **CICD Service Developer**, then choose **Assign Role Collection**.
+4. Check the boxes for **CICD Service Administrator** and **CICD Service Developer**, then click **Assign Role Collection**.
 
    <br>![](/exercises/ex1/images/assign_cicd_roles.png)
 
@@ -91,7 +62,8 @@ Connect SAP Continuous Integration and Delivery with the repository in which you
 
 <br>![](images/clone_url.png)
 
-4. Paste it into the **Clone URL** field in the **Add Repository** pop-up in SAP Continuous Integration and Delivery. Then, remove the `.git` in the URL suffix, so that it looks as follows: `https://github.com/youruser/teched2022-XP280`.
+4. Paste it into the **Clone URL** field in the **Add Repository** pop-up in SAP Continuous Integration and Delivery. 
+
 5. Enter the **Name** for your repository and leave the rest of the fields as they are.
 6. Choose **Add**.
  
