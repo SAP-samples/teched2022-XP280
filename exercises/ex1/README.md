@@ -26,11 +26,11 @@ In this exercise, you will set up SAP Continuous Integration and Delivery and, i
 
    <br>![](/exercises/ex1/images/click_on_user.png)
 
-3. In the **Role Collections** overview of your user entry, click on the three dots (**...**) and choose **Assign Role Collection**.
+3. In the **Role Collections** overview of your user entry, click on **Assign Role Collection** or, if the button is not visible, click the three dots (**...**) and choose **Assign Role Collection**.
 
    <br>![](/exercises/ex1/images/assign_role.png)
 
-4. Check the boxes for **CICD Service Administrator** and **CICD Service Developer**, then choose **Assign Role Collection**.
+4. Check the boxes for **CICD Service Administrator** and **CICD Service Developer**, then click **Assign Role Collection**.
 
    <br>![](/exercises/ex1/images/assign_cicd_roles.png)
 
