@@ -33,7 +33,7 @@ Please complete the following steps, if
 1. To open your newly created subaccount, click on its name. The next exercises will all be completed within this
    subaccount.
 
-### Exercise 0.1 - (Optional) Add the Required Entitlements
+### (Optional) Add the Required Entitlements
 
 If in the **Service Marketplace** in your subaccount, you didn't see the **Continuous Integration & Delivery** tile, execute the following steps.
 
