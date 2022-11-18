@@ -1,3 +1,5 @@
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/teched2022-XP280)](https://api.reuse.software/info/github.com/SAP-samples/teched2022-XP280)
+
 # XP280 - Combining CI/CD with Transports for Speedy and Controlled Delivery
 
 ## Description
