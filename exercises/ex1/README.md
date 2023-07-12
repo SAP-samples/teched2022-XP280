@@ -45,7 +45,7 @@ Now, the user interface of SAP Continuous Integration and Delivery opens.
 
 <br>![](/exercises/ex1/images/open_service.png)
 
-> **Note:** If you get an authorization error when trying to access the service, please log out of the SAP Business Technology Platform and log back in again.
+> **Note:** If you get an authorization error when trying to access the service, please log out of the service and log back in again.
 
 
 ## Exercise 1.1 Add Your Repository to SAP Continuous Integration and Delivery
