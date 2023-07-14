@@ -1,10 +1,11 @@
-/* global sap */
-
 {
   "plugins": ["@sap/ui5-jsdocs"],
   "extends": ["plugin:@sap/ui5-jsdocs/recommended", "eslint:recommended"],
   "env": {
     "browser": true,
     "jquery": true
+  },
+  "globals": {
+    "sap": true
   }
 }
