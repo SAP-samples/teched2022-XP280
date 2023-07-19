@@ -1,4 +1,14 @@
 {
   "plugins": ["@sap/ui5-jsdocs"],
-  "extends": ["plugin:@sap/ui5-jsdocs/recommended", "eslint:recommended"]
+  "extends": ["plugin:@sap/ui5-jsdocs/recommended", "eslint:recommended"],
+  "env": {
+    "browser": true,
+    "jquery": true,
+    "node": true,
+    "es6": true
+  },
+  "globals": {
+    "sap": true,
+    "URI": true
+  }
 }
