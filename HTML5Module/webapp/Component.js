@@ -8,7 +8,7 @@ sap.ui.define([
 	return UIComponent.extend("ns.HTML5Module.Component", {
 
 		metadata: {
-			manifest: "xml"
+			manifest: "json"
 		},
 
 		/**
