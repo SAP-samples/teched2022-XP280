@@ -15,7 +15,7 @@ In this exercise, you will extend your job in SAP Continuous Integration and Del
 To enable the **Release** stage in your SAP Continuous Integration and Delivery job, you need the name of the node for the upload to SAP Cloud Transport Management as well as a service key to authenticate your pipeline against it. We will provide these values to you.
 
 1. In the **Release** stage in your job details, switch on **Cloud Transport Management** using the toggle.
-2. Leave the drop down to `Export from` and enter the name of the node for the upload to SAP Cloud Transport Management, which in this case is `DEV`.
+2. Change the drop down to `Upload to` and enter the name of the node for the upload to SAP Cloud Transport Management, which in this case is `DEV`.
 3. For **Service Key**, click on the value help button. As a result, the **Select Credentials** window pops up. Then click the plus button which opens the **Create Credential** popup.
 4. In another browser window, open the SAP BTP cockpit and navigate to the subaccount in which you’ve created an instance for SAP Cloud Transport Management.
 5. From the navigation area, choose **Spaces** and select the space in which you’ve created the Cloud Transport Management instance.
