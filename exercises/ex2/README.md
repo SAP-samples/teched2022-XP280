@@ -13,7 +13,7 @@ In this exercise we will set up SAP Cloud Transport Management service so that i
 ### Create the Test Subaccount
 
 1. Go to the BTP cockpit of your SAP BTP trial account (global account) to the **Account Explorer**  tab.
-2. You should see (at least) one subaccount called **trial**, which was created when your trial account was set up.
+2. You should see (at least) one subaccount called **Trial**, which was created when your trial account was set up.
 3. You will now create two additional subaccounts that will be used as targets for transporting with SAP Cloud Transport Management.
 4. Choose **Create -> Subaccount**.
 5. Enter a **Display Name** of your choice, for example *Test*.
@@ -23,7 +23,7 @@ In this exercise we will set up SAP Cloud Transport Management service so that i
 9. The creation of the subaccount takes a few seconds.
 10. Click on the new tile.
 11. On the **Overview** tab click on **Enable Cloud Foundry**.
-12. Leave the **Plan** set to **standard**.
+12. Leave the **Plan** set to **trial**.
 13. You can leave the **Instance Name** as it is.
 14. The **Org Name** becomes part of the URL to be used in the destination to deploy content to this subaccount. So you might want to make it a little shorter as the proposal which is created from a combination of global account name and the subdomain name. It must be unique, though. Since the subdomain name has to be unique, too, you could use it as **Org Name** as well (remove the *global account name* part).
 15. Choose **Create**.
@@ -46,7 +46,7 @@ The steps for creating the second additional subaccount are the same as in the a
 29. The creation of the subaccount takes a few seconds.
 30. Click on the new tile.
 31. On the **Overview** tab click on **Enable Cloud Foundry**.
-32. Leave the **Plan** set to **standard**.
+32. Leave the **Plan** set to **trial**.
 33. You can leave the **Instance Name** as it is.
 34. The **Org Name** becomes part of the URL to be used in the destination to deploy content to this subaccount. So you might want to make it a little shorter as the proposal which is created from a combination of global account name and the subdomain name. It must be unique, though. Since the subdomain name has to be unique, too, you could use it as **Org Name** as well (remove the *global account name* part).
 35. Choose **Create**.
@@ -67,12 +67,12 @@ Our demo application needs a Cloud Foundry memory entitlement to run. This is ne
 3. Select **Cloud Foundry Runtime** from the drop-down 'Service'. You will see that all 4 units are assigned to one subaccount. ![Default entitlement distribution](images/ex2_entitlements_010.png)
 4. Navigate to **Entity Assignments** and click on the selector icon under **Select Entities**.
 5. Select the subaccount holding the four Cloud Foundry entitlements (by default called *trial*) and choose **Select**.
-6. Choose **Configure Entitlements**.
+6. Choose **Edit**.
 7. Scroll down to **Cloud Foundry Runtime** and use the minus (**-**) sign to reduce the number of Units to two (**2**) .
 8. Scroll up again and choose **Save**.
 9. After saving is completed use the **Select Entities** field again to deselect the **trial** subaccount and select the **Test** subaccount.
 10. Choose **Select**.
-11. Choose **Configure Entitlements**.
+11. Choose **Edit**.
 12. Choose **Add Service Plans**.
 13. Scroll down to **Cloud Foundry Runtime**, click on this entry, select the **MEMORY** checkbox and click on **Add 1 Service Plan**.
 14. Check that there is **1 Unit** of **Cloud Foundry Runtime MEMORY** assigned to the subaccount and choose **Save**.
@@ -153,26 +153,56 @@ The new service key will be used to enable the SAP Continuous Integration and De
 
 You will now create destinations that will be used to deploy the content built by the SAP Continuous Integration and Delivery service to the target subaccounts / spaces.
 
-1. Enter the subaccount in which you subscribed to Cloud Transport Management. By default, this should be the one called *trial*.
+1. Enter the subaccount in which you subscribed to Cloud Transport Management. By default, this should be the one called *Trial*.
 2. Open the **Destinations** view (to be found in the **Connectivity** area in the navigation pane).
-3. Choose **New Destination**.
-4. Enter a **Name** for the destination, for example *DEV_MTA*.
-5. Leave the **Type** set to **HTTP**.
-6. Optionally enter a description.
-7. The **URL** follows this pattern: `https://deploy-service.cfapps.<default-domain>/slprot/<myorg>/<myspace>/slp`.
-    - The `default-domain` depends on the region your trial subaccount runs in. You can determine it by opening the **Overview** tab of your subaccount in a second browser tab window. In the **Cloud Foundry Environment** section you will find the **API Endpoint**  entry. The part that follows `https://api.cf.` would be the default domain, for example `us10.hana.ondemand.com`.
-    - In the same section you also find the information for `myorg` and `myspace`.
-    - `myorg` can be found under **Org Name**.
-    - `myspace` can be found to the right in the **Spaces** table in the **Name** column.
-8. The overall URL should look like this (please use your own values!): `https://deploy-service.cfapps.us10.hana.ondemand.com/slprot/123abc45trial/dev/slp`.
-9. Leave the **Proxy Type** set to **Internet**.
-10. Change **Authentication** to **BasicAuthentication**.
-11. Enter your trial user name as **User**.  
-12. Enter your **Password**.
-13. Choose **Save**.
-14. Click **Check Connection**. The return code should be **200: OK**. Otherwise re-check your entries.
+3. Choose **New Destination** and enter the following:
 
-Now repeat these steps for the other two subaccounts you have created previously and name the destinations for example **TEST_MTA** and **PROD_MTA**.
+    <table>
+    <tr>
+        <td>Name</td>
+        <td>Enter a <b>Name</b> for the destination, for example <i>DEV_MTA</i></td>
+    </tr>
+    <tr>
+        <td>Type</td>
+        <td>Keep <b>HTTP</b>.</td>
+    </tr>
+    <tr>
+        <td>Description</td>
+        <td><b>Optional:</b> Enter a description.</td>
+    </tr>
+    <tr>
+        <td>Url</td>
+        <td>The <b>URL</b> follows this pattern: <code>https://deploy-service.cfapps.<mark>&lt;default-domain&gt</mark>/slprot/<mark>&lt;myorg&gt</mark>/<mark>&lt;myspace&gt</mark>/slp</code>.
+        <ul>
+            <li>The <code>default-domain</code> depends on the region your trial subaccount runs in. You can determine it by opening the <b>Overview</b> tab of your subaccount in a second browser tab window. In the <b>Cloud Foundry Environment</b> section you will find the <b>API Endpoint</b>  entry. The part that follows <code>https://api.cf.</code> would be the default domain, for example <code>us10.hana.ondemand.com</code>.</li>
+            <li>In the same section you also find the information for <code>myorg</code> and <code>myspace</code>.</li>
+            <li><code>myorg</code> can be found under <b>Org Name</b></li>
+            <li><code>myspace</code> can be found to the right in the <b>Spaces</b> table in the <b>Name</b> column.</li>
+        </ul>   
+            The overall URL should look like this (please use your own values!): <br><code>https://deploy-service.cfapps.us10.hana.ondemand.com/slprot/123abc45trial/dev/slp</code>.  
+        </td>
+    </tr>
+    <tr>
+        <td>Proxy Type</td>
+        <td>Keep <b>Internet</b></td>
+    </tr>
+    <tr>
+        <td>Authentication</td>
+        <td>Change to <b>BasicAuthentication</b></td>
+    </tr>
+    <tr>
+        <td>User</td>
+        <td>Enter your trial user name as <b>User</b></td>
+    </tr>
+    <tr>
+        <td>Password</td>
+        <td>Enter your <b>Password</b></td>
+    </tr>
+    </table>
+
+4. Choose **Save**.
+5. Click **Check Connection**. The return code should be **200: OK**. Otherwise re-check your entries.
+6. **Now repeat** these steps for the other two subaccounts you have created previously and name the destinations for example **TEST_MTA** and **PROD_MTA**.
 You should now have a total of three destinations pointing to your three subaccounts.
 
 ### Create a Transport Landscape in Cloud Transport Management
@@ -187,8 +217,8 @@ You should now have a total of three destinations pointing to your three subacco
 6. Enter a **Name**, for example *DEV*.
 7. Optionally enter a **Description**, for example `Development node`.
 8. **Select** the **Allow Upload to Node** checkbox.
-9. Leave the **Forward Mode** set to **Auto**.
-10. Do **not** select the **Controlled By SAP Solution Manager** checkbox.
+9. Leave the **Forward Mode** set to **Pre-Import**.
+10. Do **not** select the **Controlled By SAP Solution Manager** & **Virtual Node** checkbox.
 11. From the **Content Type** dropdown menu, select **Multi-Target Application**.
 12. Set the **Destination** to point to your development subaccount (**DEV_MTA** if you followed our naming proposal).
 13. Leave the **Deployment Strategy** set to **default**.
@@ -200,8 +230,8 @@ Repeat these steps for the other two subaccounts (with some slight changes!):
 6. Enter a **Name**, for example `TEST`.
 7. Optionally enter a **Description**, for example `Test node`.
 8. Do **not** select the **Allow Upload to Node** checkbox.
-9. Leave the **Forward Mode** set to **Auto**.
-10. Do **not** select the **Controlled By SAP Solution Manager** checkbox.
+9. Leave the **Forward Mode** set to **Pre-Import**.
+10. Do **not** select the **Controlled By SAP Solution Manager**  & **Virtual Node** checkbox.
 11. Select **Content Type** **'Multi-Target Application'** from the dropdown.
 12. Set the **Destination** to point to your development subaccount (**TEST_MTA** if you followed our naming proposal).
 13. Leave the **Deployment Strategy** set to **default**.
@@ -210,8 +240,8 @@ Repeat these steps for the other two subaccounts (with some slight changes!):
 6. Enter a **Name**, for example `PROD`.
 7. Optionally enter a **Description**, for example `Production node`.
 8. Do **not** select the **Allow Upload to Node** checkbox.
-9. Leave the **Forward Mode** set to **Auto**.
-10. Do **not** select the **Controlled By SAP Solution Manager** checkbox.
+9. Leave the **Forward Mode** set to **Pre-Import**.
+10. Do **not** select the **Controlled By SAP Solution Manager**  & **Virtual Node** checkbox.
 11. From the **Content Type** dropdown menu, select **Multi-Target Application**.
 12. Set the **Destination** to point to your development subaccount (**PROD_MTA** if you followed our naming proposal).
 13. Leave the **Deployment Strategy** set to **default**.
@@ -240,8 +270,8 @@ You should now see two tranport routes *DEV_to_TEST* and *TEST_to_PROD*.
 ### Check the Visual Representation of the Transport Landscape
 
 1. In the navigation pane, click on **Landscape Visualization**.
-2. You should see a linear three node landscape.
+2. You should see a linear three node landscape:
 
-
+    ![Landscape Visualization](images/ex2_landscapevi_001.png)
 
 Continue to - [Exercise 3 - Extend Your CI/CD Pipeline With Additional Stages](../ex3/README.md)
