@@ -164,11 +164,11 @@ You will now create destinations that will be used to deploy the content built b
     </tr>
     <tr>
         <td>Type</td>
-        <td>Leave the <b>Type</b> set to <b>HTTP</b>.</td>
+        <td>Keep <b>HTTP</b>.</td>
     </tr>
     <tr>
         <td>Description</td>
-        <td>Optionally enter a description.</td>
+        <td><b>Optional:</b> Enter a description.</td>
     </tr>
     <tr>
         <td>Url</td>
@@ -184,11 +184,11 @@ You will now create destinations that will be used to deploy the content built b
     </tr>
     <tr>
         <td>Proxy Type</td>
-        <td>Leave the <b>Proxy Type</b> set to <b>Internet</b></td>
+        <td>Keep <b>Internet</b></td>
     </tr>
     <tr>
         <td>Authentication</td>
-        <td>Change <b>Authentication</b> to <b>BasicAuthentication</b></td>
+        <td>Change to <b>BasicAuthentication</b></td>
     </tr>
     <tr>
         <td>User</td>
